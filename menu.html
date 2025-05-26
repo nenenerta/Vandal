@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu principal</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+     <!-- -----------------------Log In----------------------- -->
+    <div class="login">
+        <div id="conVandalOverlay">
+            <img src="media/vandal/IMAGOTIP.svg" alt="">
+        </div>
+        <img class="svgTR svgM" onclick="closeModal()" src="media/icon/Close.svg" alt="">
+        <div class="form">
+            <h2>Iniciar Sesión</h2>
+            <form action="">
+                <label><p>Correo</p></label>
+                <input type="email" required>
+                <label><p>Contraseña</p></label>
+                <input type="password" required>
+                <label class="pLite checkboxContainer"><input type="checkbox">Recuerdame</label>
+                <div class="JCR">
+                <button type="submit" class="boto1 pLite" href="#">
+                    Iniciar sesión<img src="media/icon/ArrowButton.svg" alt="">
+                </button>
+                 </div>
+            </form>
+        </div>
+        <div class="form2">
+            <p class="tambien">También puedes usar</p>
+            <div id="logosLogIn">
+                <div id="loginFacebook">
+                    <img src="media/icon/logos/facebook.svg" alt="">
+                </div>
+                <div id="loginGoogle">
+                    <img src="media/icon/logos/google.svg" alt="">
+                </div>
+                <div id="loginX">
+                    <img src="media/icon/logos/x.svg" alt="">
+                </div>
+            </div>
+            <p><a href="" class="textboto">¿Has olvidado tu contraseña?</a></p><br>
+            <p class="white pLite">¿Aun no tienes cuenta? <a onclick="changeRegister()" class="textboto">Registrate</a></p>
+        </div>
+    </div>
+
+    <!-- -----------------------Register----------------------- -->
+    <div class="register">
+        <div id="conVandalOverlay">
+            <img src="media/vandal/IMAGOTIP.svg" alt="">
+        </div>
+        <img class="svgTR svgM" onclick="closeModal()" src="media/icon/Close.svg" alt="">
+        <div class="form">
+            <h2>Registrate</h2>
+            <form action="">
+                <label><p>Correo</p></label>
+                <input type="email" required>
+                <label><p>Apodo</p></label>
+                <input type="text" required>
+                <label><p>Contraseña</p></label>
+                <input type="password" required>
+                <p class="pLite checkboxContainer white"><input type="checkbox"><span class="pLite">Acepto los <a class="textboto" href="TerminosCondiciones.html">Terminos y Condiciones</a></span></p>
+                <div class="JCR">
+                <button class="boto1 pLite" href="">
+                    Registrate<img src="media/icon/ArrowButton.svg" alt="">
+                </button>
+                 </div>
+            </form>
+        </div>
+        <div class="form2">
+            <p class="tambien">También puedes usar</p>
+            <div id="logosLogIn">
+                <div id="loginFacebook">
+                    <img src="media/icon/logos/facebook.svg" alt="">
+                </div>
+                <div id="loginGoogle">      
+                    <img src="media/icon/logos/google.svg" alt="">
+                </div>
+                <div id="loginX">
+                    <img src="media/icon/logos/x.svg" alt="">
+                </div>
+            </div>
+            <p class="white pLite">¿Ya tienes cuenta? <a onclick="changeLogIn()" class="textboto">Inicia sesión</a></p>
+        </div>
+    </div>
+    
+    <div class="filtreModal" onclick="closeModal()"></div>
+    <!-- -----------------------Menu Princiapl----------------------- -->
+
+    <nav class="menuPrinciapl">
+        <ul class="ulPrincipal">
+            <li class="li ulPrincipalli" onclick="showLogIn()"><img src="media/icon/Profile.png" alt=""></li>
+            <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+            <li class=" ArticulosMenu  ulPrincipalli li"><a class="textMenu" href="">Artículos</a>
+                <ul class="menuArticulos">
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                    <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
+                    <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
+                    <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
+                    <li class="li"><a class="textMenu2" href="Reportajes.html">Reportajes</a></li>
+                    <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
+                </ul>    
+            </li>
+            <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="Juegos.html">Juegos</a>
+                <ul class="menuJuegos">
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
+                    <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
+                    <li class="li"><a class="textMenu2" href="Ranking.html">Ranking</a></li>
+                </ul>
+            </li>
+            <li class="li ulPrincipalli"><a class="textMenu" href="Foro.html">Foro</a></li>
+           
+        
+        </ul>
+       
+        
+        <li class="VandalMenu">
+            <a href=""><img class="VandalImg" src="media/vandal/IMAGOTIP.svg" alt=""></a>
+            <ul class="menuVANDAL">
+                <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/random/"><img class="VandalImg" src="media/vandal/IMAGOTIP RANDOM.svg" alt=""></a></li>
+                <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/hardware"><img class="VandalImg" src="media/vandal/IMAGOTIP WARE.svg" alt=""></a></li>
+                <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/sports"><img class="VandalImg" src="media/vandal/IMAGOTIP SPORTS.svg" alt=""></a></li>
+            </ul>
+            <button><img src="media/icon/ArrowButton.svg" alt=""></button>
+        </li>
+
+        <div class="barraMenu">
+            <input class="barraMenu" type="text">
+            <img class="svgS" src="media/icon/Search.svg" alt="">
+        </div>
+    </nav>
+
+<!-- -----------------------Menu Responsive----------------------- -->
+
+<nav class="menuPrinciaplResponsive">
+    <div class="menuHamburg"><img class="svgM" src="media/icon/MenuHmburg.svg" alt=""></div>
+    <ul class="ulPrincipalResponsive">
+        <li class="li" onclick="showLogIn()"><img class="svgL" src="media/icon/Profile.png" alt=""></li>
+        <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+        <li class=" ArticulosMenu  ulPrincipalli li"><p class="textMenu">Artículos</p>
+            <ul class="menuArticulosResponsive">
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
+                <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
+                <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
+                <li class="li"><a class="textMenu2" href="Reportajes.html">Reportajes</a></li>
+                <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
+            </ul>    
+        </li>
+        <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="#">Juegos</a>
+            <ul class="menuJuegosResponsive">
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
+                <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
+                <li class="li"><a class="textMenu2" href="Ranking.html">Ranking</a></li>
+            </ul>
+        </li>
+        <li class="li ulPrincipalli"><a class="textMenu" href="Foro.html">Foro</a></li>
+       
+    
+    </ul>
+   
+    
+    <li class="VandalMenu">
+        <a href=""><img class="VandalImg" src="media/vandal/IMAGOTIP.svg" alt=""></a>
+        <ul class="menuVANDAL">
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/random/"><img class="VandalImg" src="media/vandal/IMAGOTIP RANDOM.svg" alt=""></a></li>
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/hardware"><img class="VandalImg" src="media/vandal/IMAGOTIP WARE.svg" alt=""></a></li>
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/sports"><img class="VandalImg" src="media/vandal/IMAGOTIP SPORTS.svg" alt=""></a></li>
+        </ul>
+        <button><img src="media/icon/ArrowButton.svg" alt=""></button>
+    </li>
+
+    <div class="barraMenu">
+        <input class="barraMenu" type="text">
+        <img class="svgS" src="media/icon/Search.svg" alt="">
+    </div>
+</nav>
+
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>

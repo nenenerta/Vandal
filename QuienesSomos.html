@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Quiénes Somos?">
+    <meta name="keywords" content="Vandal, RedacciónVandal">
+    <meta name="author" content="Berta Feliu">
+    <title>¿Quiénes Somos?</title>
+    <link rel="icon" type="image/x-icon" href="media/vandal/ISOTIP.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carru.css">
+</head>
+<body>
+
+   <!-- -----------------------Log In----------------------- -->
+   <div class="login">
+    <div id="conVandalOverlay">
+        <img src="media/vandal/IMAGOTIP.svg" alt="">
+    </div>
+    <img class="svgTR svgM" onclick="closeModal()" src="media/icon/Close.svg" alt="">
+    <div class="form">
+        <h2>Iniciar Sesión</h2>
+        <form action="">
+            <label><p>Correo</p></label>
+            <input type="email" required>
+            <label><p>Contraseña</p></label>
+            <input type="password" required>
+            <label class="pLite checkboxContainer"><input type="checkbox">Recuerdame</label>
+            <div class="JCR">
+            <button type="submit" class="boto1 pLite" href="#">
+                Iniciar sesión<img src="media/icon/ArrowButton.svg" alt="">
+            </button>
+             </div>
+        </form>
+    </div>
+    <div class="form2">
+        <p class="tambien">También puedes usar</p>
+        <div id="logosLogIn">
+            <div id="loginFacebook">
+                <img src="media/icon/logos/facebook.svg" alt="">
+            </div>
+            <div id="loginGoogle">
+                <img src="media/icon/logos/google.svg" alt="">
+            </div>
+            <div id="loginX">
+                <img src="media/icon/logos/x.svg" alt="">
+            </div>
+        </div>
+        <p><a href="" class="textboto">¿Has olvidado tu contraseña?</a></p><br>
+        <p class="white pLite">¿Aun no tienes cuenta? <a onclick="changeRegister()" class="textboto">Registrate</a></p>
+    </div>
+</div>
+
+<!-- -----------------------Register----------------------- -->
+<div class="register">
+    <div id="conVandalOverlay">
+        <img src="media/vandal/IMAGOTIP.svg" alt="">
+    </div>
+    <img class="svgTR svgM" onclick="closeModal()" src="media/icon/Close.svg" alt="">
+    <div class="form">
+        <h2>Registrate</h2>
+        <form action="">
+            <label><p>Correo</p></label>
+            <input type="email" required>
+            <label><p>Apodo</p></label>
+            <input type="text" required>
+            <label><p>Contraseña</p></label>
+            <input type="password" required>
+            <p class="pLite checkboxContainer white"><input type="checkbox"><span class="pLite">Acepto los <a class="textboto" href="TerminosCondiciones.html">Terminos y Condiciones</a></span></p>
+            <div class="JCR">
+            <button class="boto1 pLite" href="">
+                Registrate<img src="media/icon/ArrowButton.svg" alt="">
+            </button>
+             </div>
+        </form>
+    </div>
+    <div class="form2">
+        <p class="tambien">También puedes usar</p>
+        <div id="logosLogIn">
+            <div id="loginFacebook">
+                <img src="media/icon/logos/facebook.svg" alt="">
+            </div>
+            <div id="loginGoogle">      
+                <img src="media/icon/logos/google.svg" alt="">
+            </div>
+            <div id="loginX">
+                <img src="media/icon/logos/x.svg" alt="">
+            </div>
+        </div>
+        <p class="white pLite">¿Ya tienes cuenta? <a onclick="changeLogIn()" class="textboto">Inicia sesión</a></p>
+    </div>
+</div>
+
+<div class="filtreModal" onclick="closeModal()"></div>
+<!-- -----------------------Menu Princiapl----------------------- -->
+
+<nav class="menuPrinciapl">
+    <ul class="ulPrincipal">
+        <li class="li ulPrincipalli" onclick="showLogIn()"><img src="media/icon/Profile.png" alt=""></li>
+        <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+        <li class=" ArticulosMenu  ulPrincipalli li"><a class="textMenu" href="">Artículos</a>
+            <ul class="menuArticulos">
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
+                <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
+                <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
+                <li class="li"><a class="textMenu2" href="Reportajes.html">Reportajes</a></li>
+                <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
+            </ul>    
+        </li>
+        <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="Juegos.html">Juegos</a>
+            <ul class="menuJuegos">
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
+                <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
+                <li class="li"><a class="textMenu2" href="Ranking.html">Ranking</a></li>
+            </ul>
+        </li>
+        <li class="li ulPrincipalli"><a class="textMenu" href="Foro.html">Foro</a></li>
+       
+    
+    </ul>
+   
+    
+    <li class="VandalMenu">
+        <a href=""><img class="VandalImg" src="media/vandal/IMAGOTIP.svg" alt=""></a>
+        <ul class="menuVANDAL">
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/random/"><img class="VandalImg" src="media/vandal/IMAGOTIP RANDOM.svg" alt=""></a></li>
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/hardware"><img class="VandalImg" src="media/vandal/IMAGOTIP WARE.svg" alt=""></a></li>
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/sports"><img class="VandalImg" src="media/vandal/IMAGOTIP SPORTS.svg" alt=""></a></li>
+        </ul>
+        <button><img src="media/icon/ArrowButton.svg" alt=""></button>
+    </li>
+
+    <div class="barraMenu">
+        <input class="barraMenu" type="text">
+        <img class="svgS" src="media/icon/Search.svg" alt="">
+    </div>
+</nav>
+
+<!-- -----------------------Menu Responsive----------------------- -->
+
+<nav class="menuPrinciaplResponsive">
+<div class="menuHamburg"><img class="svgM" src="media/icon/MenuHmburg.svg" alt=""></div>
+<ul class="ulPrincipalResponsive">
+    <li class="li" onclick="showLogIn()"><img class="svgL" src="media/icon/Profile.png" alt=""></li>
+    <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+    <li class=" ArticulosMenu  ulPrincipalli li"><p class="textMenu">Artículos</p>
+        <ul class="menuArticulosResponsive">
+            <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+            <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
+            <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
+            <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
+            <li class="li"><a class="textMenu2" href="Reportajes.html">Reportajes</a></li>
+            <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
+        </ul>    
+    </li>
+    <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="#">Juegos</a>
+        <ul class="menuJuegosResponsive">
+            <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
+            <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
+            <li class="li"><a class="textMenu2" href="Ranking.html">Ranking</a></li>
+        </ul>
+    </li>
+    <li class="li ulPrincipalli"><a class="textMenu" href="Foro.html">Foro</a></li>
+   
+
+</ul>
+
+
+<li class="VandalMenu">
+    <a href=""><img class="VandalImg" src="media/vandal/IMAGOTIP.svg" alt=""></a>
+    <ul class="menuVANDAL">
+        <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/random/"><img class="VandalImg" src="media/vandal/IMAGOTIP RANDOM.svg" alt=""></a></li>
+        <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/hardware"><img class="VandalImg" src="media/vandal/IMAGOTIP WARE.svg" alt=""></a></li>
+        <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/sports"><img class="VandalImg" src="media/vandal/IMAGOTIP SPORTS.svg" alt=""></a></li>
+    </ul>
+    <button><img src="media/icon/ArrowButton.svg" alt=""></button>
+</li>
+
+<div class="barraMenu">
+    <input class="barraMenu" type="text">
+    <img class="svgS" src="media/icon/Search.svg" alt="">
+</div>
+</nav>
+
+<section id="quieneSomos">
+    <div class="dobleCol">
+            <div class="colLeft">
+                <div class="titular">
+                    <h1 class="white">¿Quiénes somos?</h1>
+                    <h3 class="white">La segunda revista digital más antigua de España </h3>
+                    <p class="pItalic white1">Escrito por Nevado el 13/1/2021</p>
+                    <div class="JCR"><div class="shacreCircle"></div></div>
+                </div>
+
+                    <div class="ContArt">
+                        
+                        <div><h2 class="accent">Nuestra Historia y objetivo</h2></div>
+                        <div class="pArt">Vandal nació el 30 de agosto de 1997 y es la segunda web de videojuegos más antigua en español, y la primera más antigua dedicada a las consolas. La web nació como proyecto personal y amateur de un adolescente de 15 años, pero un año después ya estaba consolidada como una de las principales fuentes de información de videojuegos de España. A lo largo de su historia Vandal ha pasado por diferentes diseños e hitos. Los más importantes han sido el rediseño completo de 2003, que automatizó por completo la web, el lanzamiento del pionero sistema de blogs en 2006, la asociación con el diario 20 Minutos en 2010 y la asociación con el diario El Español a finales de 2017. Actualmente la empresa Vandal Networks SL que edita Vandal está participada mayoritariamente por Pablo Grandío, fundador y director de la web, a través de su sociedad Forzáns Inversións, y minoritariamente por El León de El Español Publicaciones S.A., editora del diario El Español.
+                            Nuestro objetivo es ser la principal fuente de información de videojuegos en lengua española. Nuestros valores son la independencia editorial, el rigor informativo, el respeto a las diferencias y la inclusión de todos los públicos en el sector del videojuego. Consideramos que el videojuego es un entretenimiento interactivo que combina arte, cultura y tecnología, y creemos en su potencial para entretener, contar historias, divulgar conocimiento y convertirse en un elemento competitivo a través de los eSports.</div>
+                        <div><h2 class="accent">Nuestra Organización</h2></div> 
+                        <div class="pArt">La sede de Vandal está en A Coruña, una pequeña ciudad del noroeste de España, capital de la provincia del mismo nombre, en la región de Galicia. Estamos situados en la calle Orzán, en pleno centro, y seguro que si vives en la ciudad o la has visitado has pasado por delante de nuestra oficina. Sin embargo, en A Coruña solo están los servicios centrales de la web, ya que nuestros redactores están distribuidos por toda España y otros lugares de Europa, especialmente en Madrid y alrededores, donde suceden la gran mayoría de los eventos del mundo del videojuego. Nuestro equipo de redactores y colaboradores está también en lugares tan variopintos como Valladolid, Málaga, León, Torrelavega o Valencia, en España, y en ciudades británicas como Mánchester, Liverpool o Birmingham.</div>
+                        <div>
+                            <img src="media/sobre nosotros/seuVandal.jpg" alt="">
+                            <p class="pItalic white3">Sí, el logo se puede encender y se ilumina como la batseñal.</p>
+                        </div>
+                        <div><h2 class="accent">Nuestro Equipo de Redacción</h2></div>
+                        <div class="pArt">Éste es nuestro equipo de redactores y colaboradores. ¡Colabora! Siempre estamos buscando nuevos colaboradores dispuestos a poner su granito de arena. Interesados, manden un mail a direccion@vandal.net</div>
+            
+                        <div class="RedactorsQS">
+                            <a class="Redactor">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                            <a class="Redactor hide">
+                                <div>
+                                <div class="RedactorIMG"><img src="media/profile/1.jpeg" alt=""></div>
+                                <div class="RedactorTXT">
+                                    <p class="white">Nevado</p>
+                                    <p class="pLite white2">Redactor</p>
+                                    <div class="RedactorXXSS svgTR">
+                                        <div><div class="XHover"></div></div>
+                                        <div><div class="InstagramHover"></div></div>
+                                    </div>
+                                </div>  
+                                </div>
+                            </a>
+                        </div>
+                        <div class="JCC">
+                            <button id="showMore" onclick="toggleRedactors()" class="boto2 pLite">Ver más</button>
+                        <button id="hideMore" onclick="toggleRedactors()" class="boto2 pLite" style="display:none;">Ocultar</button>
+                        </div>
+                        
+                    </div>
+                </div>
+           
+            <div class="colSenyelo"></div>
+
+            <div class="colRight PSticky">
+                <div>
+                <div class="VandalQS"><img src="media/vandal/IMAGOTIP.svg" alt="VANDAL"></div>
+                <div class="datosContactQS">
+                    <h2>Datos de Contacto</h2>
+                    <p class="white">Correo: <span class="white3">direccion@vandal.net</span></p>
+                    <p class="white">Notas de prensa: <span class="white3">noticias@vandal.net</span></p>
+                    <p class="white">Fax: <span class="white3">+34 981 149214</span></p>
+                </div>
+                <div class="datosContactQS">
+                    <h2>Ubicación</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1450.1127343773833!2d-8.400644719398727!3d43.372309420716036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c7934490d91%3A0x1dd5d535618d2401!2sOrzan!5e0!3m2!1ses!2ses!4v1745933266166!5m2!1ses!2ses" width="100%" height="420" style="border:0;border-radius: 20px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+</section>
+
+ <!-- Inici Peuet -->
+ <footer>
+    
+  <div class="banda">
+      <div>
+      <p class="white">Lo último en videojuegos de la mano de Vandal </p>
+      <img class="svgXS" src="media/icon/DotAccent.svg" alt="">
+      <p class="white"> La segunda revista digital más antigua de España </p>
+      <a href="QuienesSomos.html" class="botoIcon pLiteButton">¿Quiénes somos?<img src="media/icon/ArrowButton.svg" alt=""></a>
+    </div>
+    </div>
+
+    <div class="peuet">
+      <div>
+          <div>
+          <div class="FootCol12">
+              <p class="bold white">Tendencias</p>
+              <a class="textbotoFooter" href="">Expedition 33</a>
+              <a class="textbotoFooter" href="">Baldur's Gate 3</a>
+              <a class="textbotoFooter" href="">Inzoi</a>
+              <a class="textbotoFooter" href="">Kingdom Come II</a>
+              <a class="textbotoFooter" href="">MarioKart World</a>
+              <a class="textbotoFooter" href="">Avowed</a>
+              <a class="textbotoFooter" href="">Split Fiction</a>
+              <a class="textbotoFooter" href="">Fear & Huger</a>
+              <a class="textbotoFooter" href="">R.E.P.O</a>
+              <a class="textbotoFooter" href="">Switch2</a>
+             
+             
+              
+              
+          </div>
+          <div class="FootCol12">
+              <p class="bold white">#parati</p>
+              <a class="textbotoFooter" href="">Inzoi</a>
+              <a class="textbotoFooter" href="">Kingdom Come II</a>
+              <a class="textbotoFooter" href="">Avowed</a>
+              <a class="textbotoFooter" href="">Split Fiction</a>
+              <a class="textbotoFooter" href="">R.E.P.O</a>
+              <a class="textbotoFooter" href="">Switch2</a>
+              <a class="textbotoFooter" href="">MarioKart World</a>
+              <a class="textbotoFooter" href="">Expedition 33</a>
+              <a class="textbotoFooter" href="">Baldur's Gate 3</a>
+              <a class="textbotoFooter" href="">Fear & Huger</a>
+          </div></div>
+          <div class="FootCol3">
+              <div class="XXSSFooter">
+                  <div><div class="XHover"></div></div>
+                  <div><div class="InstagramHover"></div></div>
+                  <div><div class="YoutubeHover"></div></div>
+                  <div><div class="FacebookHover"></div></div>
+                  <div><div class="TikTokHover"></div></div>
+              </div>
+              <a class="textbotoFooter" href="QuienesSomos.html">¿Quiénes somos?</a>
+              <a class="textbotoFooter" href="#">Aviso Legal</a>
+              <a class="textbotoFooter" href="#">Politíca de cookies</a>
+              <a class="textbotoFooter" href="#">Publicidad / Advertising</a>
+              <a class="textbotoFooter" href="#">Contacta</a>
+              <a href="Portada.html" target="_blank" class="LogoFooter">
+                  <div><img src="media/vandal/IMAGOTIP.svg" alt="VANDAL"></div>
+              </a>
+              <a href="https://www.elespanol.com" target="_blank" class="LogoFooter">
+                  <div><img src="media/logos/elespanol.svg" alt=""></div>
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="bandaPeuet">
+      <p class="pLite white">© Vandal. 1997-2025 | Todos los derechos reservados | Designed by <a href="https://www.behance.net/bertafeliudoria" target="_blank"><button class="textboto">Berta Feliu</button></a></p>
+    </div>
+
+  </footer>
+  <!-- Final Peuet -->
+
+
+   
+    <script src="js/script.js"></script>
+</body>
+</html>

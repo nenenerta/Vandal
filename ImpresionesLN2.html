@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Impresiones finales Little Nightmares 2">
+    <meta name="keywords" content="Vandal, Impresiones finales Little Nightmares 2, Little Nightmares 2">
+    <meta name="author" content="Berta Feliu">
+    <title>Impresiones finales Little Nightmares 2</title>
+    <link rel="icon" type="image/x-icon" href="media/vandal/ISOTIP.svg">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carru.css">
+
+  </head>
+  <body>
+   <!-- -----------------------Log In----------------------- -->
+    <div class="login">
+        <div id="conVandalOverlay">
+            <img src="media/vandal/IMAGOTIP.svg" alt="">
+        </div>
+        <img class="svgTR svgM" onclick="closeModal()" src="media/icon/Close.svg" alt="">
+        <div class="form">
+            <h2>Iniciar Sesión</h2>
+            <form action="">
+                <label><p>Correo</p></label>
+                <input type="email" required>
+                <label><p>Contraseña</p></label>
+                <input type="password" required>
+                <label class="pLite checkboxContainer"><input type="checkbox">Recuerdame</label>
+                <div class="JCR">
+                <button type="submit" class="boto1 pLite" href="#">
+                    Iniciar sesión<img src="media/icon/ArrowButton.svg" alt="">
+                </button>
+                 </div>
+            </form>
+        </div>
+        <div class="form2">
+            <p class="tambien">También puedes usar</p>
+            <div id="logosLogIn">
+                <div id="loginFacebook">
+                    <img src="media/icon/logos/facebook.svg" alt="">
+                </div>
+                <div id="loginGoogle">
+                    <img src="media/icon/logos/google.svg" alt="">
+                </div>
+                <div id="loginX">
+                    <img src="media/icon/logos/x.svg" alt="">
+                </div>
+            </div>
+            <p><a href="" class="textboto">¿Has olvidado tu contraseña?</a></p><br>
+            <p class="white pLite">¿Aun no tienes cuenta? <a onclick="changeRegister()" class="textboto">Registrate</a></p>
+        </div>
+    </div>
+
+    <!-- -----------------------Register----------------------- -->
+    <div class="register">
+        <div id="conVandalOverlay">
+            <img src="media/vandal/IMAGOTIP.svg" alt="">
+        </div>
+        <img class="svgTR svgM" onclick="closeModal()" src="media/icon/Close.svg" alt="">
+        <div class="form">
+            <h2>Registrate</h2>
+            <form action="">
+                <label><p>Correo</p></label>
+                <input type="email" required>
+                <label><p>Apodo</p></label>
+                <input type="text" required>
+                <label><p>Contraseña</p></label>
+                <input type="password" required>
+                <p class="pLite checkboxContainer white"><input type="checkbox"><span class="pLite">Acepto los <a class="textboto" href="TerminosCondiciones.html">Terminos y Condiciones</a></span></p>
+                <div class="JCR">
+                <button class="boto1 pLite" href="">
+                    Registrate<img src="media/icon/ArrowButton.svg" alt="">
+                </button>
+                 </div>
+            </form>
+        </div>
+        <div class="form2">
+            <p class="tambien">También puedes usar</p>
+            <div id="logosLogIn">
+                <div id="loginFacebook">
+                    <img src="media/icon/logos/facebook.svg" alt="">
+                </div>
+                <div id="loginGoogle">      
+                    <img src="media/icon/logos/google.svg" alt="">
+                </div>
+                <div id="loginX">
+                    <img src="media/icon/logos/x.svg" alt="">
+                </div>
+            </div>
+            <p class="white pLite">¿Ya tienes cuenta? <a onclick="changeLogIn()" class="textboto">Inicia sesión</a></p>
+        </div>
+    </div>
+    
+    <div class="filtreModal" onclick="closeModal()"></div>
+    <!-- -----------------------Menu Princiapl----------------------- -->
+
+    <nav class="menuPrinciapl">
+        <ul class="ulPrincipal">
+            <li class="li ulPrincipalli" onclick="showLogIn()"><img src="media/icon/Profile.png" alt=""></li>
+            <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+            <li class=" ArticulosMenu  ulPrincipalli li"><a class="textMenu" href="">Artículos</a>
+                <ul class="menuArticulos">
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                    <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
+                    <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
+                    <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
+                    <li class="li"><a class="textMenu2" href="Reportajes.html">Reportajes</a></li>
+                    <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
+                </ul>    
+            </li>
+            <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="Juegos.html">Juegos</a>
+                <ul class="menuJuegos">
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
+                    <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
+                    <li class="li"><a class="textMenu2" href="Ranking.html">Ranking</a></li>
+                </ul>
+            </li>
+            <li class="li ulPrincipalli"><a class="textMenu" href="Foro.html">Foro</a></li>
+           
+        
+        </ul>
+       
+        
+        <li class="VandalMenu">
+            <a href=""><img class="VandalImg" src="media/vandal/IMAGOTIP.svg" alt=""></a>
+            <ul class="menuVANDAL">
+                <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/random/"><img class="VandalImg" src="media/vandal/IMAGOTIP RANDOM.svg" alt=""></a></li>
+                <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/hardware"><img class="VandalImg" src="media/vandal/IMAGOTIP WARE.svg" alt=""></a></li>
+                <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/sports"><img class="VandalImg" src="media/vandal/IMAGOTIP SPORTS.svg" alt=""></a></li>
+            </ul>
+            <button><img src="media/icon/ArrowButton.svg" alt=""></button>
+        </li>
+
+        <div class="barraMenu">
+            <input class="barraMenu" type="text">
+            <img class="svgS" src="media/icon/Search.svg" alt="">
+        </div>
+    </nav>
+
+<!-- -----------------------Menu Responsive----------------------- -->
+
+<nav class="menuPrinciaplResponsive">
+    <div class="menuHamburg"><img class="svgM" src="media/icon/MenuHmburg.svg" alt=""></div>
+    <ul class="ulPrincipalResponsive">
+        <li class="li" onclick="showLogIn()"><img class="svgL" src="media/icon/Profile.png" alt=""></li>
+        <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+        <li class=" ArticulosMenu  ulPrincipalli li"><p class="textMenu">Artículos</p>
+            <ul class="menuArticulosResponsive">
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
+                <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
+                <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
+                <li class="li"><a class="textMenu2" href="Reportajes.html">Reportajes</a></li>
+                <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
+            </ul>    
+        </li>
+        <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="#">Juegos</a>
+            <ul class="menuJuegosResponsive">
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
+                <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
+                <li class="li"><a class="textMenu2" href="Ranking.html">Ranking</a></li>
+            </ul>
+        </li>
+        <li class="li ulPrincipalli"><a class="textMenu" href="Foro.html">Foro</a></li>
+       
+    
+    </ul>
+   
+    
+    <li class="VandalMenu">
+        <a href=""><img class="VandalImg" src="media/vandal/IMAGOTIP.svg" alt=""></a>
+        <ul class="menuVANDAL">
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/random/"><img class="VandalImg" src="media/vandal/IMAGOTIP RANDOM.svg" alt=""></a></li>
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/hardware"><img class="VandalImg" src="media/vandal/IMAGOTIP WARE.svg" alt=""></a></li>
+            <li class="li"><a class="textMenu2" href="https://vandal.elespanol.com/noticias/sports"><img class="VandalImg" src="media/vandal/IMAGOTIP SPORTS.svg" alt=""></a></li>
+        </ul>
+        <button><img src="media/icon/ArrowButton.svg" alt=""></button>
+    </li>
+
+    <div class="barraMenu">
+        <input class="barraMenu" type="text">
+        <img class="svgS" src="media/icon/Search.svg" alt="">
+    </div>
+</nav>
+
+
+
+
+
+<section id="articleJoc">
+    <div class="titular">
+    <h1 class="white1">Impresiones finales Little Nightmares 2</h1>
+    <h3 class="white1">Volvemos a adentrarnos en el universo de los miedos de la infancia para superar los dos primeros niveles de una secuela que apunta a convertirse en uno de los primeros juegazos de 2021.</h3>
+    <p class="pItalic white">Escrito por <a href="Nevat.html" class="textbotoItalic accent">Nevat</a> el 13/1/2021</p>
+    <div class="JCR"><div class="shacreCircle"></div></div>
+    </div>
+
+
+    <div class="dobleCol">
+
+        <div class="colLeft ContArt">
+            <div><img src="media/article/little-nightmares-ii.jpg" alt=""></div>
+            <div class="pArt">Hay muchas formas de hacer una secuela, pero una de las que mejor suelen funcionar es la de apostar por el clásico "más y mejor" de lo visto en la entrega original. Little Nightmares fue una de las sorpresas más agradables que nos dejó la pasada generación, un humilde y pequeño título de terror que supo dejar huella con su apabullante diseño artístico, sus tensas situaciones y su críptica y terrorífica historia. Una aventura con muchísima personalidad y con un encanto único que nos conquistó y que ahora está a punto de recibir una segunda parte que apuesta precisamente por expandir y mejorar la fórmula en todos los sentidos posibles e imaginables.</div>
+            <div><iframe style="border-radius: 20px;" width="560" height="315" src="https://www.youtube.com/embed/xD54eHGVgXU?si=k5cMgivpjwWX8MA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+            <div class="pArt">Esto no es algo que nos pille de nuevas, ya que fue justo lo que os comentamos en octubre cuando pudimos probar una demo a la que nos dieron acceso, pero ahora, a tan solo un mes de su lanzamiento final y tras haber jugado sus dos primeras fases de principio a fin, podemos confirmaros que el trabajo de Tarsier Studios con este nuevo juego nos está pareciendo impecable.
+            </div>
+            <div><h2 class="accent">Explorando el mundo de los miedos de la infancia</h2></div>
+            <div class="pArt">Así pues, esta vez volvemos a encontrarnos ante una aventura lineal que combina con mucho acierto sigilo, resolución de puzles y ligeros toques tanto de plataformas como de combates. De esta manera, deberemos avanzar por una serie de siniestros escenarios intentando sobrevivir a los cientos de peligros que nos aguardan en ellos, desde trampas colocadas con muy mala idea hasta temibles criaturas que buscarán acabar con nosotros en cuanto se percaten de nuestra presencia.</div>
+            <div>
+                <img src="media/article/ART1.jpg" alt="">
+                <p class="pItalic white3">Los escenarios vuelven a ser los principales narradores de esta nueva historia.</p>
+            </div>
+            <div class="pArt">Tal y como podréis suponer, la narrativa es heredera directa de lo visto en la primera entrega, así que no esperéis diálogos de ningún tipo ni explicaciones claras de lo que ocurre, ya que la historia de este universo se nos cuenta a través de sus escenarios, personajes y situaciones. Tanto es así que cuando iniciemos una nueva partida no hay un vídeo introductorio ni nada parecido y empezaremos controlando directamente a Mono, el nuevo y misterioso protagonista, quien por algún motivo se encuentra en mitad de un bosque. ¿Quiénes somos? ¿Por qué estamos ahí? ¿Qué está pasando exactamente? Estas son preguntas que tendremos que responder por nosotros mismos prestando muchísima atención a todo lo que nos rodea, una técnica de narración que cuando se hace tan bien como en este caso nos encanta y ayuda a hacer que todo resulte más desconcertante y terrorífico.</div>
+            <div class="pArt">Pero sin duda, el plato fuerte lo tenemos en el diseño de niveles y escenarios, probablemente el aspecto que más nos ha sorprendido de todo lo que hemos jugado. Uno de los mayores aciertos del estudio ha sido aumentar la escala del viaje, abandonando así las limitaciones de Las Fauces, el barco en el que se desarrollaba el original, para llevarnos a lo largo y ancho de su universo. Esto, además de transmitirnos la sensación de estar viviendo una gran aventura, ha permitido al equipo creativo ir mucho más allá y crear todo tipo de nuevas e inéditas situaciones con fases que no son solo mucho más diversas en lo visual, sino también en lo mecánico.</div>
+            <div>
+                <img src="media/article/ART2.jpg" alt="">
+                <p class="pItalic white3">El cazador será el primer gran enemigo que se interpondrá en nuestro camino. Darle esquinazo en su bosque no será una experiencia apta para taquicárdicos.</p>
+            </div>
+            <div class="pArt">Puede sonar exagerado, pero os aseguramos que cada paso que hemos dado ha sido una sorpresa constante y un auténtico derroche de creatividad y buenas ideas de diseño. Es muy complicado hablar de esto sin caer en spoilers, pero en la hora y media que hemos jugado no hemos vivido dos situaciones iguales. Siempre hemos tenido que hacer algo nuevo para evitar a los monstruos, los puzles son fáciles pero están muy bien pensados y la naturalidad con la que vamos pasando de un momento a otro casi sin darnos cuenta es increíble.</div>
+            <div class="pArt">Es uno de esos juegos que consiguen que quieras seguir jugando solo por descubrir qué es lo que te espera a continuación, ya que siempre hay un nuevo horror aguardando tras cada esquina. Nos ha parecido especialmente llamativa la forma en la que se han diseñado ahora los encuentros contra los grandes enemigos, mucho más originales, espeluznantes, tensos y memorables que los de la primera parte, quienes se encargarán de ponernos las cosas difíciles cuando menos nos lo esperemos en multitud de situaciones distintas. De hecho, aquí tenemos que aplaudir también el uso tan acertado que se ha hecho de ellos, tanto a la hora de presentarlos como de introducirlos en el desarrollo de los acontecimientos, encontrando un punto de equilibrio perfecto para no abusar de ellos y que no pierdan su impacto. Aparecen cuando tienen que hacerlo, pero siempre sentiremos que nos acechan y rara vez respiraremos tranquilos.</div>
+            <div>
+                <img src="media/article/ART3.jpg" alt="">
+                <p class="pItalic white3">No queremos mostrar más de lo necesario, pero el nivel que transcurre dentro del colegio es una auténtica pasada en la que os aguardan infinidad de desagradables sorpresas.</p>
+            </div>
+            <div class="pArt">Una de las mayores novedades de esta entrega y que también ayuda a aportar variedad es la presencia de Six, la protagonista del primer juego, quien ahora nos acompañará durante gran parte de nuestro periplo como un personaje no controlable. Como podréis imaginar, tendremos que colaborar activamente con ella para alcanzar lugares inaccesibles y abrirnos camino, aunque esto nos ha gustado más por lo que aporta a la narrativa que a la jugabilidad, pues casi todas sus acciones están prefijadas y no hay mecánicas cooperativas reales. Eso sí, la relación que se crea entre ambos personajes es fantástica y hemos agradecido mucho el no tener que preocuparnos por ella, ya que es capaz de evitar los peligros por sí sola y nunca nos entorpecerá.</div>
+            <div class="pArt">Otra cosa que nos ha llamado mucho la atención es que esta vez no nos dedicaremos únicamente a huir o a pasar desapercibidos, obligándonos así a que agarremos algún objeto y lo usemos como arma para atacar con ellos a enemigos que sean de nuestro tamaño. Estos momentos son muy contados y difícilmente podríamos considerarlo como un sistema de combate, ya que nuestras "armas" son tan grandes y pesadas que lo único que podremos hacer con ellas será dar un lento y poderoso golpe que, si fallamos, probablemente acabe con nosotros muertos, lo que hace que estos enfrentamientos sean muy tensos. No es que sea nada revolucionario, pero son situaciones nuevas que aportan algo de frescura entre tanto sigilo y persecución, sumando puntos a un producto que nos tiene ya totalmente ganados.</div>
+            <div>
+                <img src="media/article/ART4.jpg" alt="">
+                <p class="pItalic white3">La conexión que se crea entre Mono y Six y, por ende, entre el jugador y la chica, está muy conseguida.</p>
+            </div>
+            <div class="pArt">A nivel técnico también nos ha sorprendido la mejora que ha experimentado respecto al original, con muchos más detalles, efectos y unos escenarios considerablemente más elaborados y ricos capaces de contar bastante más, algo que también se aprovecha para crear diversos tipos de situaciones jugables (la manera que tiene el título de usar la iluminación y las sombras en el desarrollo de la aventura es espectacular). Además, los tiempos de carga son prácticamente inexistentes, una mejora muy necesaria al tratarse de un juego en el que los momentos de ensayo y error están a la orden del día y en el que todo nos puede matar. Ahora, cuando fracasemos no pasará ni un segundo hasta que lo podamos reintentar desde el último punto de control, consiguiendo que la experiencia sea mucho más fluida y no nos importe reintentar una parte que se nos atragante las veces que sean necesarias.</div>
+            <div>
+                <img src="media/article/ART5.jpg" alt="">
+                <p class="pItalic white3">A nivel artístico es una maravilla.</p>
+            </div>
+            <div class="pArt">El sonido tampoco se queda atrás con una banda sonora que mantiene el inquietante estilo de la primera parte, combinando composiciones que parecen versiones retorcidas de canciones infantiles con otras mucho más intensas y menos melódicas en las que la percusión, los golpes y los ruidos cobran todo el protagonismo para indicarnos el peligro al que nos estamos enfrentando. Por su parte, los efectos son capaces de crear un ambiente único, realzar la atmósfera y alertarnos para que podamos reaccionar a tiempo. Aquí queremos señalar que hay varios momentos en los que el apartado sonoro cobra un papel importantísimo en las mecánicas de juego, como obligarnos a estar pendientes de una canción para mover objetos mientras suena y que así el ruido que hagamos quede tapado, una muestra más de la enorme variedad de situaciones de la que os hemos hablado a lo largo de todo el artículo.</div>
+            <div><h2 class="accent">La pesadilla más prometedora</h2></div>
+            <div class="pArt">Little Nightmares 2 está ya a la vuelta de la esquina y si su versión final es capaz de mantener el nivel que hemos visto hasta ahora, podemos dar por seguro que se va a convertir en uno de los primeros juegazos de este 2021 que acaba de empezar. Es justo lo que esperábamos de esta secuela e incluso más, mejorando en todo a su predecesor para ofrecernos una aventura mucho más grande, mejor diseñada, más sorprendente e infinitas veces más variada, divertida y terrorífica. Por nuestra parte, estamos deseando que llegue ya el 11 de febrero para poder sumergirnos por completo en este fascinante universo y descubrir hasta dónde nos llevará el viaje de Mono y Six. Si también os gustó, y si también os gustó tanto como a nosotros su primera parte, bien haríais en marcar esta fecha en vuestros calendarios, pues apunta a ser toda una experiencia que no os querréis perder.
+                <p class="pItalic">Hemos realizado estas impresiones tras probar en PC una versión de prueba a la que nos ha dado acceso Bandai Namco.</p>
+            </div>
+
+            <a class="Redactor">
+                <div>
+                <div class="RedactorIMG"><img src="media/profile/2.jpg" alt=""></div>
+                <div class="RedactorTXT">
+                    <p class="white">Nevat</p>
+                    <p class="pLite white2">Redactor</p>
+                    <div class="RedactorXXSS svgTR">
+                        <div><div class="XHover"></div></div>
+                        <div><div class="InstagramHover"></div></div>
+                    </div>
+                </div>  
+                </div>
+            </a>
+
+
+
+  <div class="comentaris">
+    <div class="capceleraComents">
+      <div><div class="iconComents"><img class="svgL" src="media/icon/Coments.svg" alt=""><p>20</p></div><p class="white1">Comentarios</p></div>
+      <div class="filtresComents"><a><p class="white textboto" data-filtre="0">Populares</p></a>
+      <a><p class="accent textboto" data-filtre="0">Recientes</p></a>
+    <a><p class="white textboto" data-filtre="0">Antiguos</p></a></div>
+    </div>
+    <div class="Coments">
+      <div class="capsaComent">
+        <div class="Perfil">
+          <img src="media/profile/4.webp" alt="">
+          <p class="white1">DonSimonHD</p>
+          
+        </div>
+        <form action="">
+          <textarea placeholder="Unete a la conversación ..." name="" id=""></textarea>
+          <button class="botoIcon pLite">Publicar <img src="media/icon/ArrowButton.svg" alt=""></button>
+        </form>
+      </div>
+
+      <div class="capsaComent">
+        <div class="Perfil">
+          <img src="media/profile/2.jpg" alt="">
+          <p class="white1">Protesis45</p>
+          <p class="pLite white2">hace 1.3h</p>
+          <div><img class="tancarComent svgM" src="media/icon/Remove.svg" alt="" onclick="toggleComments(event)"></div>
+        </div>
+        <div class="contentComent">
+          <p class="white1">El primero fue una maravilla y después de ver gameplays, tráilers y pasarme la demo del II en Switch, este segundo tiene pinta de que incluso podría superarlo. Solo el tiempo lo dirá, pero desde luego se viene juegazo. La demo te deja con ganas de más. Ya queda menos para hacernos con él.</p>
+          <div>
+            <div class="upvote pLite"><img class="svgM" src="media/icon/UpVote.svg" alt="">0</div>
+            <div class="downvote pLite"><img class="svgM" src="media/icon/DownVote.svg" alt="">0</div>
+            <a class="textboto white">Responder</a>
+            <img class="svgM" src="media/icon/ShareWhite.svg" alt="">
+            <hr>
+            <img class="svgM" src="media/icon/ReportFlag.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div class="capsaComent">
+        <div class="Perfil">
+          <img src="media/profile/3.webp" alt="">
+          <p class="white1">JuanPerez</p>
+          <p class="pLite white2">hace 2h</p>
+          <div><img class="tancarComent svgM" src="media/icon/Remove.svg" alt="" onclick="toggleComments(event)"></div>
+        </div>
+        <div class="contentComent">
+          <p class="white1">El primero fue una maravilla y después de ver gameplays, tráilers y pasarme la demo del II en Switch, este segundo tiene pinta de que incluso podría superarlo. Solo el tiempo lo dirá, pero desde luego se viene juegazo. La demo te deja con ganas de más. Ya queda menos para hacernos con él.</p>
+          <div>
+            <div class="upvote pLite"><img class="svgM" src="media/icon/UpVote.svg" alt="">0</div>
+            <div class="downvote pLite"><img class="svgM" src="media/icon/DownVote.svg" alt="">0</div>
+            <a class="textboto white">Responder</a>
+            <img class="svgM" src="media/icon/ShareWhite.svg" alt="">
+            <hr>
+            <img class="svgM" src="media/icon/ReportFlag.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+       <div class="capsaComent">
+        <div class="Perfil">
+          <img src="media/profile/1.jpeg" alt="">
+          <p class="white1">MariaStalker</p>
+          <p class="pLite white2">hace 5h</p>
+          <div><img class="tancarComent svgM" src="media/icon/Remove.svg" alt="" onclick="toggleComments(event)"></div>
+        </div>
+        <div class="contentComent">
+          <p class="white1">El primero fue una maravilla y después de ver gameplays, tráilers y pasarme la demo del II en Switch, este segundo tiene pinta de que incluso podría superarlo. Solo el tiempo lo dirá, pero desde luego se viene juegazo. La demo te deja con ganas de más. Ya queda menos para hacernos con él.</p>
+          <div>
+            <div class="upvote pLite"><img class="svgM" src="media/icon/UpVote.svg" alt="">0</div>
+            <div class="downvote pLite"><img class="svgM" src="media/icon/DownVote.svg" alt="">0</div>
+            <a class="textboto white">Responder</a>
+            <img class="svgM" src="media/icon/ShareWhite.svg" alt="">
+            <hr>
+            <img class="svgM" src="media/icon/ReportFlag.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+    </div>
+ </div>
+
+
+
+        </div>
+        
+        <div class="colRight">
+
+            <div class="capsulaVideojoc">
+                <div class="capsaJoc">
+                    <div class="seguirHeart"><img class="svgM" src="media/icon/HeartEmpty.svg" alt=""></div>
+                    <p><a class="accent pLite" href="LittleNightmares2.html">Ver Juego</a><img class="svgXS" src="media/icon/ArrowButtonAccent.svg" alt=""></p>
+                    <a href="LittleNightmares2.html" class="blackHover"></a>
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/860510/library_600x900.jpg" alt="">
+                    <div class="plataformes">
+                        <div class="pc"><p class="white bold">PC</p></div>
+                        <div class="ps"><img src="media/icon/logos/play.svg" alt=""></div>
+                        <div class="xbox"><img src="media/icon/logos/xbox.svg" alt=""></div>
+                        <div class="swch"><img src="media/icon/logos/switch.svg" alt=""></div>
+                    </div>
+                   
+                    <div class="nota">8,5</div>
+
+                    
+                </div>
+                <div class="capsulaVideojocTXT">
+                    <h2>Little Nightmares II</h2>
+                    <p>
+                        <p class="white">Lanzamiento: <span class="white3">10/2/2021</span></p>
+                        <p class="white">Género: <span class="white3">Aventura de exploración y puzles / Plataformas de puzles / Terror</span></p>
+                     <h2></h2>
+                        <p class="white">Desarollo: <span class="white3">Tarsier Studios</span></p>
+                        <p class="white">Producción: <span class="white3">BANDAI NAMCO Entertainment</span></p>
+                    </p>
+                    <div class="verJuegoResponsive"><a class="pLiteButton black verJuegoResponsive" href="LittleNighmares2.html"><button class="botoIcon pLiteButton black">Ver Juego<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
+                    <div><a class="pLiteButton black" href="https://www.g2a.com/es/search?query=little%20nightmares%202" target="_blank"><button class="botoIcon pLiteButton black">Comprar<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
+                </div>
+            </div>
+
+            <div class="Promo1">
+                <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
+                <img class="imgPromo" src="media/promo/nvidia.jpg" alt="">
+              </div>
+        
+              <div class="NotiLateral">
+        
+                <div class="titolSec">
+                  <h2>Últimas publicaciones</h2>
+                  <button class="boto2 pLite">Ver más</button>
+                </div>
+        
+                <div class="CapsulaNotiLateral">
+                  <div>
+                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                  <div class="CapsulaNotiLateralTEXT">
+                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                    <p class="pLite white3">Impresiones Animal Crossing</p>
+                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                  </div>
+                </div>
+                </div>
+                <div class="CapsulaNotiLateral">
+                  <div>
+                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                  <div class="CapsulaNotiLateralTEXT">
+                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                    <p class="pLite white3">Impresiones Animal Crossing</p>
+                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                  </div>
+                </div>
+                </div>
+                <div class="CapsulaNotiLateral">
+                  <div>
+                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                  <div class="CapsulaNotiLateralTEXT">
+                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                    <p class="pLite white3">Impresiones Animal Crossing</p>
+                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                  </div>
+                </div>
+                </div>
+                <div class="CapsulaNotiLateral">
+                  <div>
+                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                  <div class="CapsulaNotiLateralTEXT">
+                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                    <p class="pLite white3">Impresiones Animal Crossing</p>
+                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                  </div>
+                </div>
+                </div>
+                
+                </div>
+        
+                <div class="Promo1 DisplayNoneM">
+                  <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
+                  <img class="imgPromo" src="media/promo/sony.jpg" alt="">
+                </div>
+
+
+                  
+      <div class="ForoLateral">
+
+        <h2 class="white">Debates Relacionados</h2>
+
+        <a class="CapsulaForoLateral">
+          
+          <div class="CapsulaForoLateralIMG"><img src="media/profile/1.jpeg" alt=""></div>
+          <div class="CapsulaForoLateralTEXT">
+            <p class="white hoverForoLateral">Cuenta regresiva para el direct de Switch 2</p>
+            <p class="pLite white2">hace 1.7h por LittleCrow</p>
+          </div>
+        </a>
+        <a class="CapsulaForoLateral">
+          
+            <div class="CapsulaForoLateralIMG"><img src="media/profile/2.jpg" alt=""></div>
+            <div class="CapsulaForoLateralTEXT">
+              <p class="white hoverForoLateral">Necesito entender la lógica del juego digital</p>
+              <p class="pLite white2">hace 5h por Nevat</p>
+            </div>
+          </a>
+          <a class="CapsulaForoLateral">
+          
+            <div class="CapsulaForoLateralIMG"><img src="media/profile/3.webp" alt=""></div>
+            <div class="CapsulaForoLateralTEXT">
+              <p class="white hoverForoLateral">Cada generación de consolas es más cara que la anterior</p>
+              <p class="pLite white2">hace 5h por Polenski</p>
+            </div>
+          </a>
+          <a class="CapsulaForoLateral">
+          
+            <div class="CapsulaForoLateralIMG"><img src="media/profile/4.webp" alt=""></div>
+            <div class="CapsulaForoLateralTEXT">
+              <p class="white hoverForoLateral">Se puede escoger un solo juego como “El mejor de todos los tiempos”</p>
+              <p class="pLite white2">hace 8h por DonSimon</p>
+            </div>
+          </a>
+
+          <h2 class="white">Últimos Debates</h2>
+
+        <a class="CapsulaForoLateral">
+          
+          <div class="CapsulaForoLateralIMG"><img src="media/profile/5.jpg" alt=""></div>
+          <div class="CapsulaForoLateralTEXT">
+            <p class="white hoverForoLateral">Huelga en la industria del videojuego</p>
+            <p class="pLite white2">hace 1,5h por SpongeBob45</p>
+          </div>
+        </a>
+        <a class="CapsulaForoLateral">
+          
+            <div class="CapsulaForoLateralIMG"><img src="media/profile/6.jpg" alt=""></div>
+            <div class="CapsulaForoLateralTEXT">
+              <p class="white hoverForoLateral">Metroid Prime 4 is coming?!</p>
+              <p class="pLite white2">hace 4h por Creeper</p>
+            </div>
+          </a>
+          <a class="CapsulaForoLateral">
+          
+            <div class="CapsulaForoLateralIMG"><img src="media/profile/7.jpg" alt=""></div>
+            <div class="CapsulaForoLateralTEXT">
+              <p class="white hoverForoLateral">En caso de que Mario Kart 9 tuviera todos los personajes que quisieran…</p>
+              <p class="pLite white2">hace 4h por PuppyCat</p>
+            </div>
+          </a>
+          <a class="CapsulaForoLateral titolAccJocPBorderNone">
+          
+            <div class="CapsulaForoLateralIMG"><img src="media/profile/8.jfif" alt=""></div>
+            <div class="CapsulaForoLateralTEXT">
+              <p class="white hoverForoLateral">Lo de que los juegos se ven similares a PS5 y Xbox X no es tan descabellado</p>
+              <p class="pLite white2">hace 6h por GatoConGorro</p>
+            </div>
+          </a>
+        
+
+        </div>
+
+                    <div class="Promo1 DisplayNoneM">
+                        <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
+                        <img class="imgPromo" src="media/promo/nvidia.jpg" alt="">
+                      </div>
+
+                      <div class="NotiLateral">
+        
+                        <div class="titolSec">
+                          <h2>Últimas publicaciones</h2>
+                          <button class="boto2 pLite">Ver más</button>
+                        </div>
+                
+                        <div class="CapsulaNotiLateral">
+                          <div>
+                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                          <div class="CapsulaNotiLateralTEXT">
+                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                            <p class="pLite white3">Impresiones Animal Crossing</p>
+                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="CapsulaNotiLateral">
+                          <div>
+                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                          <div class="CapsulaNotiLateralTEXT">
+                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                            <p class="pLite white3">Impresiones Animal Crossing</p>
+                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="CapsulaNotiLateral">
+                          <div>
+                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                          <div class="CapsulaNotiLateralTEXT">
+                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                            <p class="pLite white3">Impresiones Animal Crossing</p>
+                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="CapsulaNotiLateral">
+                          <div>
+                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
+                          <div class="CapsulaNotiLateralTEXT">
+                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
+                            <p class="pLite white3">Impresiones Animal Crossing</p>
+                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+                          </div>
+                        </div>
+                        </div>
+
+                      
+                        
+                        </div>
+                        
+                        <div class="PStickyPromo">
+                        <div class="Promo1 DisplayNoneM">
+                            <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
+                            <img class="imgPromo" src="media/promo/sony.jpg" alt="">
+                          </div></div>
+        
+              </div>
+        
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Inici Peuet -->
+ <footer>
+    
+  <div class="banda">
+      <div>
+      <p class="white">Lo último en videojuegos de la mano de Vandal </p>
+      <img class="svgXS" src="media/icon/DotAccent.svg" alt="">
+      <p class="white"> La segunda revista digital más antigua de España </p>
+      <a href="QuienesSomos.html" class="botoIcon pLiteButton">¿Quiénes somos?<img src="media/icon/ArrowButton.svg" alt=""></a>
+    </div>
+    </div>
+
+    <div class="peuet">
+      <div>
+          <div>
+          <div class="FootCol12">
+              <p class="bold white">Tendencias</p>
+              <a class="textbotoFooter" href="">Expedition 33</a>
+              <a class="textbotoFooter" href="">Baldur's Gate 3</a>
+              <a class="textbotoFooter" href="">Inzoi</a>
+              <a class="textbotoFooter" href="">Kingdom Come II</a>
+              <a class="textbotoFooter" href="">MarioKart World</a>
+              <a class="textbotoFooter" href="">Avowed</a>
+              <a class="textbotoFooter" href="">Split Fiction</a>
+              <a class="textbotoFooter" href="">Fear & Huger</a>
+              <a class="textbotoFooter" href="">R.E.P.O</a>
+              <a class="textbotoFooter" href="">Switch2</a>
+             
+             
+              
+              
+          </div>
+          <div class="FootCol12">
+              <p class="bold white">#parati</p>
+              <a class="textbotoFooter" href="">Inzoi</a>
+              <a class="textbotoFooter" href="">Kingdom Come II</a>
+              <a class="textbotoFooter" href="">Avowed</a>
+              <a class="textbotoFooter" href="">Split Fiction</a>
+              <a class="textbotoFooter" href="">R.E.P.O</a>
+              <a class="textbotoFooter" href="">Switch2</a>
+              <a class="textbotoFooter" href="">MarioKart World</a>
+              <a class="textbotoFooter" href="">Expedition 33</a>
+              <a class="textbotoFooter" href="">Baldur's Gate 3</a>
+              <a class="textbotoFooter" href="">Fear & Huger</a>
+          </div></div>
+          <div class="FootCol3">
+              <div class="XXSSFooter">
+                  <div><div class="XHover"></div></div>
+                  <div><div class="InstagramHover"></div></div>
+                  <div><div class="YoutubeHover"></div></div>
+                  <div><div class="FacebookHover"></div></div>
+                  <div><div class="TikTokHover"></div></div>
+              </div>
+              <a class="textbotoFooter" href="QuienesSomos.html">¿Quiénes somos?</a>
+              <a class="textbotoFooter" href="#">Aviso Legal</a>
+              <a class="textbotoFooter" href="#">Politíca de cookies</a>
+              <a class="textbotoFooter" href="#">Publicidad / Advertising</a>
+              <a class="textbotoFooter" href="#">Contacta</a>
+              <a href="Portada.html" target="_blank" class="LogoFooter">
+                  <div><img src="media/vandal/IMAGOTIP.svg" alt="VANDAL"></div>
+              </a>
+              <a href="https://www.elespanol.com" target="_blank" class="LogoFooter">
+                  <div><img src="media/logos/elespanol.svg" alt=""></div>
+              </a>
+          </div>
+      </div>
+    </div>
+
+    <div class="bandaPeuet">
+      <p class="pLite white">© Vandal. 1997-2025 | Todos los derechos reservados | Designed by <a href="https://www.behance.net/bertafeliudoria" target="_blank"><button class="textboto">Berta Feliu</button></a></p>
+    </div>
+
+  </footer>
+  <!-- Final Peuet -->
+
+
+
+   
+  <script src="js/script.js"></script>
+</body>
+</html>

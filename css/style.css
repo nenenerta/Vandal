@@ -1,0 +1,2233 @@
+
+/* MENU PRINCIPAL */
+
+.menuPrinciapl{
+    height: 60px;
+    width: 100vw;
+    background: var(--GradMenu);
+    display: flex;
+    align-items: center;
+    padding: 8px 47px 8px 32px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+}
+.menuPrinciaplResponsive{
+    height: 60px;
+    width: 100vw;
+    background: var(--GradMenu);
+    display: flex;
+    align-items: center;
+    padding: 8px 32px 8px 24px;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 10;
+    display: none;
+}
+.ulPrincipalResponsive{
+    position: absolute;
+    width: 135px;
+    top: 60px;
+    left: 0px;
+    height: 100vh;
+    background: var(--GradMenu);
+    padding: 16px 40px 16px 24px;
+    z-index: 5;
+    transform: translateX(-200%);
+    transition: transform .4s;
+}
+
+.menuArticulosResponsive{
+    width: auto;
+    padding: 24px 32px;
+    background-color: var(--white);
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 60px;
+    left: 135px;
+    display: none;
+}
+
+.menuArticulosResponsive a{
+    color: var(--black1);
+}
+.menuArticulosResponsive li{
+    margin-top: 8px;
+}
+.menuArticulosResponsive li:hover > a{
+    color: var(--accent);
+}
+.menuJuegosResponsive{
+    width: auto;
+    padding: 24px 32px;
+    background-color: var(--white);
+    border-radius: 0px 10px 10px 0px;
+    position: absolute;
+    top: 140px;
+    left: 135px;
+    display: none;
+}
+.menuJuegosResponsive li{
+    margin-top: 8px;
+}
+.menuJuegosResponsive li:hover > a{
+    color: var(--accent);
+}
+.menuJuegosResponsive a{
+    color: var(--black1);
+}
+.ulPrincipal{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    gap: 40px;
+   
+}
+.ulPrincipalli{
+    list-style: none;
+    height: 60px;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+
+}
+.ulPrincipal img{
+    border-radius: 40px;
+    width: 40px;
+    height: 40px;
+    margin-left: -16px;
+    transition: opacity .1s;
+}
+.ulPrincipal img:hover{
+    opacity: .5;
+}
+.ArticulosMenu{
+    list-style: none;
+}
+.ArticulosMenu:hover > .menuArticulos {
+    display: block;
+}
+
+.JuegosMenu:hover > .menuJuegos {
+    display: block;
+}
+
+.menuArticulos{
+    width: auto;
+    padding: 24px 32px;
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 60px;
+    left: 186px;
+    display: none;
+}
+
+.menuArticulos a{
+    color: var(--black1);
+}
+.menuArticulos li{
+    margin-top: 8px;
+}
+.menuArticulos li:hover > a{
+    color: var(--accent);
+}
+
+.menuVANDAL{
+    width: 85%;
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    z-index: 8;
+    padding: 4px 10px;
+    padding-top: 24px;
+    display: none;
+}
+.menuVANDAL img{
+    width: 100%;
+}
+.menuVANDAL>li{
+    padding-top: 4px;
+    transition-property: padding-top padding-bottom;
+    transition-duration: .4s;
+}
+
+.menuVANDAL>li:hover{
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+
+.menuJuegos{
+    width: auto;
+    padding: 24px 32px;
+    background-color: var(--white);
+    border-radius: 0px 0px 10px 10px;
+    position: absolute;
+    top: 60px;
+    left: 296px;
+    display: none;
+}
+.menuJuegos li{
+    margin-top: 8px;
+}
+.menuJuegos li:hover > a{
+    color: var(--accent);
+}
+.menuJuegos a{
+    color: var(--black1);
+}
+
+.VandalMenu{
+    width: 200px;
+    height: 38px;
+    background-color: var(--white);
+    border-radius: 15px;
+    display: flex;
+    position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translate(-50%);
+    cursor: pointer;
+}
+
+.VandalMenu>a{
+    padding: 4px 10px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.VandalMenu>a>img{
+    width: 100%;
+}
+.VandalMenu>button{
+    width: 15%;
+    height: 100%;
+    border-left: solid var(--white3) 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 2px;
+}
+.VandalMenu>button>img{
+    width: 10px;
+    height: 10px;
+    transform: rotateZ(0deg);
+    transition: transform ease .1s;
+    opacity: .9;
+}
+
+.VandalImg{
+    width: 100%;
+    z-index: 9;
+}
+
+.VandalMenu:hover .menuVANDAL{
+   display: block;
+}
+.VandalMenu:hover >button>img{
+    transform: rotateZ(135deg);
+}
+
+.barraMenu{
+    display: flex;
+}
+
+.barraMenu input{
+    background-color: rgba(1, 1, 1, 0);
+    color: var(--white);
+    border: none;
+    width: 213px;
+    border: solid var(--white2) 1px;
+    border-radius: 15px;
+    padding: 4px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'PoppinsRegular';
+}
+
+.barraMenu img{
+    margin-left: -28px;
+}
+
+/* Banda */
+
+@keyframes bandaHoritzontal{
+    from{
+        transform: translateX(1000px);
+    }
+    to{
+        transform: translateX(-1000px);
+    }
+  }
+  
+
+  .banda, .bandaInteractiva{
+    padding: 0px 0px 0px 0px;
+    background-color: var(--black2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: padding 1s;
+  }
+  .banda>div, .bandaInteractiva>div{
+    display: flex;
+    align-items: center;
+  }
+
+  .banda{
+    padding: 24px 4px;
+  }
+
+
+.peuet{
+    background: var(--GradDark);
+    padding: 60px 0px;
+}
+.peuet>div{
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.peuet>div>div{
+    display: flex;
+}
+
+.FootCol12{
+    display: flex;
+    flex-direction: column;
+    margin-right: 80px;
+}
+.FootCol12>a, .FootCol12>p{
+    margin-bottom: 16px;
+}
+.FootCol3{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: auto;
+}
+.FootCol3>a{
+    margin-bottom: 16px;
+}
+.XXSSFooter{
+    display: flex;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: grey dashed 1px;
+}
+.XXSSFooter>div{
+    margin: 0px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.LogoFooter{
+    width: 100%;
+    padding-top: 4px;
+    transition-property: padding-top padding-bottom;
+    transition-duration: .4s;
+    margin-bottom: 20px;
+   
+}
+
+.LogoFooter:hover{
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+
+.LogoFooter>div{
+    background-color: var(--white2);
+    border-radius: 15px;
+    padding: 16px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.LogoFooter img{
+    width: 100%;
+}
+
+.bandaPeuet{
+    width: 100%;
+    background-color: #213D51;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* LOGIN */
+
+.login{
+    width: 20vw;
+    background-color: var(--black1);
+    padding: 24px 40px;
+    border-radius: 3px;
+    border: solid var(--black2) 1px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 12;
+    display: none;
+    position: fixed;
+}
+
+.register{
+    width: 20vw;
+    background-color: var(--black1);
+    padding: 24px 40px;
+    border-radius: 3px;
+    border: solid var(--black2) 1px;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 12;
+    display: none;
+    position: fixed;
+}
+
+
+#conVandalOverlay{
+    width: 55%;
+    height: 35px;
+    background: var(--white);
+    border-radius: 15px;
+    padding: 8px 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+#conVandalOverlay>img{
+    width: 90%;
+}
+.form{
+    width: 100%;
+    margin-bottom: 32px;
+}
+.form h2{
+    margin-bottom: 24px;
+    color: var(--white);
+}
+.form label{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: start;
+    color: var(--white);
+}
+.form > form > input{
+    margin-bottom: 16px;
+    font-family: 'PoppinsRegular';
+    background-color: var(--black2);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: var(--white);
+    width: 100%;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    border: 1px solid var(--white3);
+    border-radius: 3px;
+    cursor: pointer;
+    display: grid;
+    place-content: center;
+    margin-right: 8px;
+}
+
+  
+  input[type="checkbox"]::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+  }
+  
+  input[type="checkbox"]:checked {
+    background: url(../media/icon/Tick.svg);
+  }
+
+  .checkboxContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+.JCR{
+    display: flex;
+    justify-content: right;
+}
+
+
+.form2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.form2>p{
+    width: 100%;
+    text-align: center;
+}
+.tambien{
+    font-family: 'PoppinsRegular', sans-serif;
+    font-size: 13.33px;
+    color: var(--white);
+    width: 100%;
+    border-bottom: grey dashed 1px;
+    text-align: center;
+    padding-bottom: 4px;
+}
+#logosLogIn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+#logosLogIn > div{
+    border-radius: 10px;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    margin: 16px 10px;
+    cursor: pointer;
+    transition: margin .1s;
+}
+
+#logosLogIn > div:hover{
+    margin: 14px 10px;
+}
+#logosLogIn img{
+    height: 40px;
+    width: auto;
+}
+#loginFacebook{
+    background-color: #1773EA;
+}
+
+#loginGoogle{
+    background-color: white;
+}
+#loginX{
+    background-color: black;
+}
+
+
+/* Error 404 */
+
+#error404{
+    text-align: center;
+    padding-top: 60px;
+    margin-bottom: 24px;
+
+}
+#error404 h1{
+    font-size: 80px;
+
+}
+#animation{
+    width: 15%;
+margin-left: auto;
+margin-right: auto;
+    padding: 60px 0px;
+    position: relative;
+}
+#pacman{
+    width: 200px;
+}
+
+#Gota{
+    width: 44px;
+    position: absolute;
+    top: 15px;
+    left: 25px;
+    animation: gota 2.5s infinite;
+    animation-delay: 1s;
+  animation-timing-function: ease-in;
+  opacity: 0;
+}
+
+@keyframes gota {
+    0% {top: 15px;
+        left: 25px;
+        opacity: 0;
+        }
+    30% {opacity: 1;}
+    90% {top: 100px;
+        left: 25px;
+    opacity: 1;}
+    95% {opacity: 0;}
+    100% {top: 100px;
+        left: 25px;opacity: 0;}
+  }
+
+
+  .NotiLateral{
+    margin-bottom: 60px;
+    width: 100%;
+  }
+  .CapsulaNotiLateral{
+    cursor: pointer;
+    width: 100%;
+    height: 171px;
+    padding-top: 4px;
+    transition: padding-top .4s;
+    margin-bottom: 16px;
+
+  }
+
+  .CapsulaNotiLateral:hover{
+    padding-top: 0;
+  }
+.maxLenght3{
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  overflow: hidden;
+  }
+
+  .CapsulaNotiLateral:hover .hoverNotiLateral{
+    color: var(--accent);
+  }
+
+.CapsulaNotiLateral>div{
+    width: 100%;
+    height: 171px;
+    display: flex;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--GradBlack);
+}
+
+.CapsulaNotiLateralIMG{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.CapsulaNotiLateralTEXT{
+    width: 60%;
+    padding: 16px 24px 40px 24px;
+}
+
+
+.descubreRegistro{
+    background: var(--GradDark);
+    width: 100%;
+    border-radius: 15px;
+    padding: 32px;
+    position: relative;
+    margin: 4px 0px;
+    transition: margin .4s;
+    overflow: hidden;
+    
+}
+/* .descubreRegistro:hover{
+    margin: 0;
+} */
+.descubreRegistro:hover .img1descubreRegistro{
+    bottom: -40px;
+    right: -20px;
+    opacity: 0;
+}
+.descubreRegistro:hover .img2descubreRegistro{
+    bottom: 0px;
+    right: 0px;
+    opacity: 1;
+}
+.descubreRegistro h2{
+    margin-bottom: 32px;
+}
+.descubreRegistro p{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.descubreRegistro>p>img{
+    margin-right: 16px;
+}
+.img1descubreRegistro{
+    width: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transition-property: bottom right opacity;
+    transition-duration: .4s;
+}
+.img2descubreRegistro{
+    width: 400px;
+    position: absolute;
+    bottom: -40px;
+    right: -20px;
+    opacity: 0;
+    transition-property: bottom right opacity;
+    transition-duration: .4s;
+}
+
+/* ------------------------------------------PAGINA ARTICLE */
+
+#articleJoc{
+    padding-top: 100px;
+}
+.titular{
+    width: 80%;
+    margin-bottom: 24px;
+}
+.titular>div{
+    width: 70%;
+}
+.titular h1, .titular h3{
+    margin-bottom: 12px;
+}
+
+.shacreCircle{
+    width: 40px;
+    height: 40px;
+    background-image: url('../media/icon/ShareCircle.svg');
+    background-size: cover;
+    transition: background-image 0.3s;
+}
+
+.shacreCircle:hover{
+    background-image: url('../media/icon/ShareCircleHover.svg');
+}
+
+.ContArt>div{
+    margin-bottom: 60px;
+}
+.ContArt>div>img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+}
+
+.ContArt>div>iframe{
+    width: 100%;
+    height: 25vw;
+}
+
+
+
+
+.capsulaVideojoc{
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+    height: 350px;
+   
+}
+.capsaJoc{
+    width: 47%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    object-fit: cover;
+    z-index: 6;
+}
+.capsaJoc>img{
+    height: 100%;
+    filter: brightness(.7);
+ }
+.capsaJoc>p{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 8;
+    opacity: 0;
+}
+.capsaJoc>p>img{
+    width: 8px;
+}
+.blackHover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 7;
+    opacity: 0;
+    transition: opacity .1s;
+}
+.capsulaVideojocP{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.capsulaVideojocTXT{
+    width: 50%;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+ }
+ .capsulaVideojocTXT h2{
+    margin-bottom: 32px;
+}
+
+.nota{
+    position: absolute;
+    left: 16px;
+    bottom: 0px;
+    padding: 8px;
+    background: #7EE781;
+    font-family: 'PoppinsSemiBold', sans-serif;
+    font-size: 38px;
+    color: var(--black1);
+    border-radius: 20px 20px 0px 0px;
+}
+
+
+.capsulaVideojocTXT>div{
+margin-top: 32px;
+}
+.capsulaVideojocTXT>div>button{
+    margin: 0;
+}
+
+.plataformes{
+    position: absolute;
+    top: 16px;
+    right: 0px;
+}
+
+.plataformes>div{
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.pc{
+    background-color: black;
+}
+.ps{
+    background-color: #1355E0;
+}
+.xbox{
+    background-color: #077D07;
+}
+.swch{
+    background-color: #F70001;
+}
+.seguirHeart{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 8;
+}
+.capsaJoc:hover > p{
+    opacity: 1;
+}
+.capsaJoc:hover .blackHover{
+    opacity: 1;
+}
+.verJuegoResponsive{
+    display: none;
+}
+
+
+.ForoLateral{
+    margin-bottom: 60px;
+    width: 100%;
+    background-color: var(--black2);
+    border-radius: 20px;
+    padding: 32px 24px;
+    padding-bottom: 4px;
+}
+.ForoLateral>h2{
+    margin-bottom: 32px;
+}
+.CapsulaForoLateral{
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 16px;
+    display: flex;
+    border-bottom: grey dashed 1px;
+    padding-bottom: 16px;
+    align-items: center;
+}
+.hoverForoLateral{
+    transition: color .1s;
+    display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  overflow: hidden;
+}
+.CapsulaForoLateral:hover .hoverForoLateral{
+    color: var(--accent);
+}
+.CapsulaForoLateralIMG{
+    margin-right: 8px;
+}
+.CapsulaForoLateralIMG>img{
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.CapsulaForoLateralTEXT{
+    width: 88%;
+    
+}
+
+.Conclusion{
+    width:100%;
+    background-color: var(--black2);
+    padding: 24px;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.Conclusion>h3, .Conclusion>p{
+    width: 70%;
+}
+.Conclusion>p{
+    margin-bottom: 24px;
+}
+.Conclusion>div{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+.Conclusion>a{
+    margin-left: auto;  
+}
+.Conclusion>div>div{
+    width: calc(33% - 16px);
+}
+.barraConclu{
+    width: 100%;
+    border-radius: 3px;
+    background-color: var(--black1);
+    height: 16px;
+    position: relative;
+    overflow: hidden;
+}
+.CapsaNotaConclu{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+}
+.Conclusion>div>div>p{
+    margin-bottom: 8px;
+}
+.barraConclu>div{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.Redactor{
+    width: 48%;
+    padding-top: 4px;
+    transition-property: padding-top padding-bottom;
+    transition-duration: .4s;
+    display: flex;
+    margin-bottom: 100px;
+    cursor: pointer;
+    
+}
+.Redactor:hover{
+    padding-top: 0px;
+    padding-bottom: 4px;
+}
+.Redactor>div{
+    width:100%;
+    background-color: var(--black2);
+    padding: 24px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.RedactorTXT{
+    padding-left: 24px;
+}
+
+.RedactorIMG>img{
+    width: 64px;
+    height: 64px;
+    border-radius: 30px;
+}
+.RedactorXXSS{
+    display: flex;
+align-items: center;
+}
+.RedactorXXSS>div{
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+/* Amagar els redactors extra per defecte */
+.Redactor.hide {
+    display: none;
+}
+.galImg>.hide {
+    display: none;
+}
+/* Estil per als botons */
+
+
+
+  #quieneSomos{
+    display: flex;
+  }
+  #quieneSomos .colLeft{
+    padding-top: 100px;
+  }
+  #quieneSomos .titular{
+    width: 100%;
+  }
+  #quieneSomos .titular>div{
+    width: 100%;
+  }
+  .RedactorsQS{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .RedactorsQS>a{
+    margin-bottom: 32px;
+  }
+.VandalQS{
+    background-color: var(--white2);
+    border-radius: 20px;
+    width: 100%;
+    padding: 24px 0px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+}
+.VandalQS img{
+    width: 80%;
+}
+.datosContactQS{
+    margin-bottom: 32px;
+}
+.datosContactQS>h2{
+    margin-bottom: 16px;
+}
+.PSticky>div{
+    position: sticky;
+    top: 0;
+    padding-top: 100px; 
+}
+
+.PStickyPromo{
+    position: sticky;
+    top: 0;
+    padding-top: 100px;
+    width: 100%;
+}
+
+.PStickyPromo0{
+    position: sticky;
+    top: 70px;
+    width: 100%;
+}
+
+.PStickyPromoJoc{
+    position: sticky;
+    top: 170px;
+    width: 100%;
+}
+
+
+.capsaDia{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin-right: 32px;
+}
+.capsaDia>div{
+    display: flex;
+}
+.capsaDia>h3{
+    width: 100%;
+    border-bottom: var(--accent) 2px solid;
+    margin-bottom: 24px;
+}
+
+.capsaJocLittle{
+   width: 130px !important;
+   height: 190px;
+   border-radius: 15px;
+   overflow: hidden;
+   position: relative;
+   cursor: pointer;
+    object-fit: cover;
+    z-index: 6;
+    display: flex;
+    margin-right: 16px;
+    transition: opacity 1s;
+}
+
+.capsaDia > div > div:nth-last-child(1){
+    /* display: none; */
+    margin-right: 0;
+}
+
+.capsaJocLittle>img{
+    width: 105%;
+  filter: brightness(.7);
+
+ }
+.capsaJocLittle>p{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+    z-index: 8;
+    opacity: 0;
+    padding-right: 16px;
+    line-height: 14px;
+}
+.capsaJocLittle>p>img{
+    width: 8px;
+}
+.blackHoverLittle{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 7;
+    opacity: 0;
+ 
+}
+.capsulaVideojocTXTLittle{
+    width: 60%;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+ }
+ .capsulaVideojocTXT h2{
+    margin-bottom: 32px;
+}
+
+
+.capsulaVideojocTXTLittle>div{
+margin-top: 32px;
+}
+.capsulaVideojocTXTLittle>div>button{
+    margin: 0;
+}
+
+.plataformes{
+    position: absolute;
+    top: 16px;
+    right: 0px;
+}
+
+.plataformes>div{
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.pc{
+    background-color: black;
+}
+.ps{
+    background-color: #1355E0;
+}
+.xbox{
+    background-color: #077D07;
+}
+.swch{
+    background-color: #F70001;
+}
+.seguirHeart{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 8;
+}
+.capsaJocLittle:hover > p{
+    opacity: 1;
+}
+.capsaJocLittle:hover .blackHover{
+    opacity: 1;
+}
+.verJuegoResponsive{
+    display: none;
+}
+.ProximosLanzamientos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.TrackProxim{
+    width: 100%;
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    scrollbar-color: var(--white3) var(--black1);
+    scrollbar-width: none;
+    padding-bottom: 20px;
+}
+
+.FitxaJoc{
+    padding-top: 100px;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.FitxaJoc h1{
+    margin-bottom: 40px;
+}
+.FitxaJoc>div{
+    width: 48%;
+}
+.generes{
+    display: flex;
+    margin-bottom: 40px;
+}
+.generes>div{
+    background-color: var(--white1);
+    margin-right: 24px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: background-color .1s;
+}
+
+.generes>div:hover{
+    background-color: var(--white3);
+}
+
+.capsaJocP{
+    width: 44%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    object-fit: cover;
+    z-index: 6;
+}
+.capsaJocP>img{
+    width: 105%;
+  filter: brightness(.7);
+ }
+.capsaJocP>p{
+    position: absolute;
+    right: 16px;
+    bottom: 16px;
+    z-index: 8;
+    opacity: 0;
+}
+.capsaJocP>p>img{
+    width: 8px;
+}
+
+.capsulaVideojocTXTP{
+    width: 55%;
+    padding-left: 16px;
+
+}
+
+.filtresJocP{
+    display: flex;
+    border-bottom: grey dashed 1px;
+    height: 6%;
+}
+.filtresJocP>a{
+    margin-right: 32px;
+}
+.capsulaVideojocTXTP>div{
+margin-top: 16px;
+}
+.capsulaVideojocTXTP button{
+    margin: 0;
+}
+
+.plataformes{
+    position: absolute;
+    top: 16px;
+    right: 0px;
+}
+
+.plataformes>div{
+    padding: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+
+.pegi{
+    position: absolute;
+    left: 16px;
+    bottom: 16px;
+}
+
+.Filtre{
+    height: 86.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.FiltrePC a{
+    margin-bottom: 8px;
+}
+.FiltreBotons{
+    height: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.BotoncJoc{
+    display: flex;
+}
+
+.Filtre>div>div{
+    margin-bottom: 24px;
+}
+
+
+.FitxaJocRight{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+}
+.notesJocP{
+    display: flex;
+    height: 30%;
+}
+
+.notesJocP img{
+    width: auto;
+    height: 16px;
+}
+
+.notesJocP p{
+    text-align: center;
+    margin-bottom: 4px;
+    height: 20px;
+}
+
+.CapsaNota{
+    margin-left: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.CapsaNota>div{
+    padding: 8px;
+    background: #7EE781;
+    font-family: 'PoppinsSemiBold', sans-serif;
+    font-size: 38px;
+    color: var(--black1);
+    border-radius: 20px;
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.OverlayValorar{
+    width: 400px;
+    background-color: var(--black1);
+    padding: 24px 32px;
+    border-radius: 3px;
+    border: solid var(--black2) 1px;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 12;
+    position: fixed;
+    display: none;
+}
+.OverlayValorar>div{
+    display: flex;
+    margin-top: 8px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.OverlayValorar>div input{
+    font-family: 'PoppinsRegular';
+    background-color: var(--black2);
+    border: none;
+    border-radius: 10px;
+    padding: 8px 16px;
+    color: var(--white);
+    width: 70px;
+    scrollbar-width: 0;
+}
+
+.OverlayValorar>div a{
+    margin-left: 16px;
+}
+
+.galImg{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.galImg>div{
+    width: calc(25% - 16px);
+    margin-bottom: 8px;
+
+}
+
+.galImg>div>img{
+    width: 100%;
+
+}
+
+.OverlayImatges{
+    width: 75%;
+    background-color: var(--black1);
+    padding: 70px 24px;
+    border-radius: 3px;
+    border: solid var(--black2) 1px;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    z-index: 12;
+    display: none;
+    position: fixed;
+}
+
+.OverlayImatges>div>button{
+    width: 5%;
+    padding: 0px;
+    height: 100%;
+}
+.OverlayImatges>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.OverlayImatges>div>img{
+    width: 85%;
+}
+
+.AccJocP{
+    background-color: var(--black1);
+    border-radius: 20px;
+    width: 85%;
+    overflow: hidden;
+    height: auto;
+    margin: 0;
+}
+
+
+.titolAccJocP{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0px;
+    border-top: solid var(--black2) 1px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
+
+.titolAccJocPBorderNone{
+    border: none;
+}
+
+    
+
+.accTit{
+    font-family: 'PoppinsMedium', sans-serif;
+  font-size: 23.04px;
+  color: var(--white);
+}
+
+.HeightAccJocP {
+    max-height: 0;
+    overflow: scroll;
+    transition: padding max-height opacity;
+    transition-duration: 0.4s;
+    opacity: 0;
+    scrollbar-width: none;
+  }
+  
+  .HeightAccJocP:not(.accHeight) {
+    max-height: 280px;
+    padding: 12px 24px;
+    opacity: 1;
+  }
+  
+
+
+
+
+  .menuContingutJoc{
+    width: 100%;
+    background-color: var(--black1);
+    display: flex;
+    padding: 32px 0px;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 60px;
+    z-index: 9;
+  }
+
+.menuContingutJoc>p{
+    padding: 0px 16px;
+}
+
+
+.contingutPaginaJoc{
+    margin-top: 40px;
+}
+
+.carouselTrack{
+    width: 100%;
+    height: 70vh;
+   overflow: hidden;
+   position: relative;
+   border-radius: 15px;
+  }
+  
+  .carousel{
+    display: flex;
+  }
+  .carouselSlide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .carouselSlideSelected {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  .carouselSlideSelected:hover .capsaCar h3{
+    color: var(--accent);
+  }
+  
+  .carouselSlideSelected:hover .capsaCar{
+    padding-bottom: 28px;
+  }
+  
+  .carouselSlide > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .capsaCar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0px;
+    width: 50%;
+    background: var(--GradBlack);
+    left: 40px;
+    padding: 24px;
+    align-items: end;
+    transition: padding-bottom .1s;
+  }
+  .prev, .prevx4{
+    padding-right: 16px;
+    transition: opacity .4s;
+    cursor: pointer;
+  }
+  .prev:hover, .prevx4:hover{
+    opacity: 70%;
+  }
+  
+  .next, .nextx4{
+    padding-left: 16px;
+    transition: opacity .4s;
+    cursor: pointer;
+  }
+  .next:hover, .nextx4:hover{
+    opacity: 70%;
+  }
+  
+  .carousel-indicators, .carousel-indicatorsx4{
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+  }
+  .carousel-indicators img, .carousel-indicatorsx4 img{
+    margin: 0px 4px;
+  }
+  .timeCar{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: var(--white);
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    color: var(--black2);
+  }
+  
+  
+  
+  .CapsulaNoti{
+    width: 48.5%;
+    padding-top: 4px;
+    transition-property: padding-top padding-bottom;
+    transition-duration: .4s;
+    margin-bottom: 32px;
+    cursor: pointer;
+  }
+  .CapsulaNoti>div{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: var(--GradBlack);
+  }
+  .CapsulaNoti:hover .CapsulaNotiTEXT h3{
+    color: var(--accent);
+  }
+  .CapsulaNoti:hover{
+    padding-top: 0px;
+    padding-bottom: 4px;
+  }
+  
+  .CapsulaNotiIMG{
+    width: 100%;
+    height: 200px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      
+  
+  }
+  .CapsulaNotiIMGx4{
+    width: 100%;
+    height: 12vh;
+    object-fit: cover;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+  }
+  .CapsulaNotiIMG img{
+    height: 100%;
+    object-fit: cover;  
+  }
+  .CapsulaNotiIMGx4 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .CapsulaNotiTEXT{
+    width: 100%;
+    height: 45%;
+    padding: 16px 16px;
+    margin-top: -6px;
+  }
+  .CapsulaNotiTEXT p{
+    width: 100%;
+  }
+  
+  .SecNoti{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .notiTrack{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .CapsulaNotiTEXT h3{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  
+  
+  .carouselx4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .carouselSlidex4{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.5s ease;
+    z-index: 0;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nextx4, .prevx4{
+    width: 5%;
+  }
+  .carouselTrackx4{
+    width: 90%;
+    height: 35vh;
+   overflow: hidden;
+   position: relative;
+   border-radius: 15px;
+  
+  }
+  
+  
+  .CapsulaNotix4{
+    width: 24%;
+    padding-top: 4px;
+    transition: padding-top .4s;
+    cursor: pointer;
+    height: auto;
+  }
+  .CapsulaNotix4>div{
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: transparent;
+  }
+  .CapsulaNotix4:hover .CapsulaNotiAccentx4{
+    color: var(--accent);
+  }
+  .CapsulaNotix4:hover{
+    padding-top: 0px;
+  }
+  
+  .CapsulaNotiAccentx4{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+  }
+  .carouselSlideSelectedx4 {
+    opacity: 1;
+    z-index: 1;
+    pointer-events: auto;
+    cursor: pointer;
+  }
+  
+  
+  .CapsulaNotix4Video{
+    width: 24%;
+    height: auto;
+    padding-top: 4px;
+    transition: padding-top .4s;
+    cursor: pointer;
+  }
+  .CapsulaNotix4Video>div{
+    width: 100%;
+    border-radius: 15px;
+    background: transparent;
+  }
+  .CapsulaNotix4Video:hover .CapsulaNotiAccentx4{
+    color: var(--accent);
+  }
+  .CapsulaNotix4Video:hover .CapsulaNotiIMGx4Video>img{
+    opacity: 1;
+  }
+  .CapsulaNotix4Video:hover{
+    padding-top: 0px;
+  }
+  .CapsulaNotix4Video:hover .CapsulaNotiAccentx4{
+    color: var(--accent);
+  }
+  .botoPlay{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background-color: var(--accent);
+    position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .botoPlay>div{
+    width: 24px;
+    height: 24px;
+    background-image: url('../media/icon/Play.svg');
+    background-size: cover;
+  }
+  
+  .CapsulaNotiIMGx4Video>img{
+    opacity: .7;
+    transition: opacity .4s;
+  }
+  
+  
+  .CapsulaNotiIMGx4Video{
+    position: relative;
+    height: 180px;
+    border-radius: 20px;
+  }
+  
+  .JocsRelacionats{
+    display: flex;
+}
+.capsulaVideojocRelacionat{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 60px;
+}
+.capsulaVideojocRelacionat>h3{
+    margin-bottom: 16px;
+     display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  overflow: hidden;
+}
+.capsulaVideojocRelacionat>div{
+    width: 100%;
+}
+
+.contingutPaginaJoc h1{
+    margin-bottom: 100px;
+}
+
+
+/* Comentaris */
+
+.capceleraComents{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+
+.capceleraComents>div{
+    display: flex;
+    align-items: flex-end;
+}
+.iconComents{
+    position: relative;
+
+}
+.iconComents>img{
+    margin-right: 6px;
+}
+
+.iconComents>p{
+    position: absolute;
+    top: 9px;
+    left: 11px;
+}
+.filtresComents>a{
+    margin-left: 32px;
+}
+
+.Coments{
+    border: var(--accent) 2px solid;
+    border-radius: 3px;
+    padding: 32px;
+}
+.Perfil{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.Perfil>img{
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+}
+.capsaComent{
+    border-bottom: grey dashed 1px;
+    margin-bottom: 16px;
+}
+.capsaComent>form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: right;
+}
+.capsaComent textarea{
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    height: 100px;
+    border-radius: 15px;
+    background-color: var(--black2);
+    padding: 16px;
+    color: var(--white3);
+}
+.contentComent>p{
+    margin-bottom: 16px;
+}
+.contentComent>div{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.contentComent>div>div{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--white);
+}
+.contentComent>div>hr{
+    width: 50px;
+    border: grey dashed 1px;
+}
+.tancarComent{
+    position: absolute;
+    top: 4px;
+    right: 0px;
+}
+.contentComent{
+    padding-bottom: 24px;
+}
+.contentComentHide{
+    display: none;
+    padding: 0;
+}
+
+.Coments>div:nth-last-child(1){
+    border-bottom: transparent;
+    margin-bottom: 0;
+}
+
+
+
+
+/* ----------------Responsive Tauleta------------------------------------------------*/
+
+@media (max-width: 991px) {
+    .banda, .bandaInteractiva{
+        height: 94px;
+        background-color: var(--black1);
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+      }
+      .banda>div, .bandaInteractiva>div{
+        display: flex;
+        align-items: center;
+        animation: bandaHoritzontal 11s infinite;
+        animation-timing-function: linear;
+        white-space: nowrap;
+        
+      }
+      .menuPrinciapl{
+        display: none;
+      }
+      .menuPrinciaplResponsive{
+        display: flex;
+      }
+    .peuet>div{
+        width: 55%;
+    }
+    .FootCol12{
+        display: none;
+    }
+    .FootCol3{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .XXSSFooter{
+        width: 100%;
+        justify-content: center;
+    }
+    .textbotoFooter{
+        width: 100%;
+        text-align: center;
+    }
+    .LogoFooter{
+        width: 48%;
+    }
+    .LogoFooter>div{
+        height: 100%;
+    }
+    .login, .register{
+        width: 50vw;
+    }
+    .NotiLateral{
+        display: none;
+    }
+    .titular{
+        width: 100%;
+     }
+     .titular>div{
+         width: 100%;
+     }
+    .ContArt>div>iframe{
+        width: 100%;
+        height: 350px;
+    }
+    .capsaJoc{
+        width: 30%;
+       height: 300px;
+       }
+       .capsulaVideojocTXT{
+        width: 65%;
+       }
+       .verJuegoResponsive{
+        display: block;
+       }
+       .capsaJoc:hover .blackHover{
+        opacity: 0;
+    }
+    .capsaJoc:hover > p{
+        opacity: 0;
+    }
+    .capsaJoc{
+        height: 320px;
+    }
+    .capsulaVideojocTXT>div{
+        margin: 4px 0px;
+        padding: 0px;
+    }
+    .Redactor{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .nextx4, .prevx4{
+        display: none;
+      }
+      .carouselIndicatorsx4{
+        width: 20vw;
+      }
+      .carouselTrackx4{
+        width: 100%;
+      }
+      .CapsulaNoti{
+        width: 48.5%;
+    }
+    .CapsulaNoti>div{
+        width: 100%;
+    }
+    .CapsulaNotiIMG{
+        height: 200px;
+    }
+    .CapsulaNotiTEXT{
+        height: 55%;
+    }
+    .CapsulaNotiTEXT h3{
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        line-clamp: 3;
+        overflow: hidden;
+    }
+    .next, .prev, .nextx4, .prevx4{
+      display: none;
+    }
+    .capsaCar{
+      width: 100%;
+      left: 0px;
+    }
+    .carouselTrack{
+      width: 100%;
+      height: 50vh;
+    }
+    .FitxaJoc{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .FitxaJoc>div{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .FitxaJoc h1{
+    margin-bottom: 0px;
+}
+    .AccJocP{
+        width: 100%;
+    }
+    .notesJocP{
+        width: 100%;
+        height: 30%;
+        margin: 32px 0px;
+        justify-content: center;
+    }
+    .capsulaVideojocP{flex-direction: column;
+    }
+    .generes{
+    flex-direction: column;
+    text-align: center;}
+    .generes>div{
+    margin-top: 16px;}
+    .menuContingutJoc{
+        width: 100vw;
+        overflow: scroll;
+        left: 0px;
+    }
+    .ForoLateral{
+        display: none;
+    }
+    .Redactor{
+    width:100%;
+    display: flex;}
+    .Redactor>div{
+        width: 300px;
+        align-items: center;
+    }
+    .RedactorXXSS{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .RedactorTXT{
+        justify-content: center;
+        align-items: center;
+    }
+    .titular{
+       width: 100%;
+    }
+    .titular>div{
+        width: 100%;
+    }
+    .ContArt{
+        width: 100%;
+
+    }
+    .ContArt>div>iframe{
+    width: 100%;
+    height: 350px;
+}
+.shacreCircle{
+    margin-top: 16px;
+}
+
+.HeightAccJocP {
+    scrollbar-width: thin;
+  }
+
+}
+
+/* ----------------Responsive Mòbil------------------------------------------------*/
+
+  
+  @media (max-width: 768px) {
+    .barraMenu>input{
+        display: none;
+    }
+    .barraMenu img{
+        margin-left: 0;
+    }
+    .menuPrinciaplResponsive{
+        padding: 24px 16px;
+    }
+    .CapsulaNotix4VideoMobil{
+      display: none !important;
+    }
+    .CapsulaNotix4Video{
+      width: 48%;
+    }
+    
+    .CapsulaNoti{
+    width: 100%;
+    margin-right: 24px;
+    }
+  .notiTrack{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    overflow-y: hidden;
+    scrollbar-color: var(--white3) var(--black1);
+    scrollbar-width: none;
+  }
+  .carouselTrack{
+    width: 100%;
+    height: 70vh;
+  }
+  .capsaCar>p{
+    display: none;
+  }
+  .capsaCar>button{
+    margin-left: auto;
+  }
+  .login, .register{
+        width: 92%;
+        padding: 24px 24px;
+    }
+    .descubreRegistro>img{
+        display: none;
+    }
+  }
+  
