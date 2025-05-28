@@ -16,8 +16,8 @@
 
   </head>
   <body>
-   <!-- -----------------------Log In----------------------- -->
-    <div class="login">
+     <!-- -----------------------Log In----------------------- -->
+      <div class="login">
         <div id="conVandalOverlay">
             <img src="media/vandal/IMAGOTIP.svg" alt="">
         </div>
@@ -101,10 +101,10 @@
     <nav class="menuPrinciapl">
         <ul class="ulPrincipal">
             <li class="li ulPrincipalli" onclick="showLogIn()"><img src="media/icon/Profile.png" alt=""></li>
-            <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+            <li class="li ulPrincipalli"><a class="textMenu accent" href="Portada.html">Portada</a></li>
             <li class=" ArticulosMenu  ulPrincipalli li"><a class="textMenu" href="">Artículos</a>
                 <ul class="menuArticulos">
-                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Noticias</a></li>
                     <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
                     <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
                     <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
@@ -147,10 +147,10 @@
     <div class="menuHamburg"><img class="svgM" src="media/icon/MenuHmburg.svg" alt=""></div>
     <ul class="ulPrincipalResponsive">
         <li class="li" onclick="showLogIn()"><img class="svgL" src="media/icon/Profile.png" alt=""></li>
-        <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
-        <li class=" ArticulosMenu  ulPrincipalli li"><p class="textMenu">Artículos</p>
+        <li class="li ulPrincipalli"><a class="textMenu accent" href="Portada.html">Portada</a></li>
+        <li class=" ArticulosMenu  ulPrincipalli li" onclick="OpenArticle()"><p class="textMenu">Artículos</p>
             <ul class="menuArticulosResponsive">
-                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Noticias</a></li>
                 <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
                 <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
                 <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
@@ -158,7 +158,7 @@
                 <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
             </ul>    
         </li>
-        <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="#">Juegos</a>
+        <li class="JuegosMenu li ulPrincipalli" onclick="OpenJocs()"><a class="textMenu" href="#">Juegos</a>
             <ul class="menuJuegosResponsive">
                 <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
                 <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
@@ -189,6 +189,9 @@
 
 
 
+<!-- -------------------------fi menu -->
+
+
 
 
 <section id="articleJoc">
@@ -203,7 +206,7 @@
     <div class="dobleCol">
 
         <div class="colLeft ContArt">
-            <div><img src="media/article/little-nightmares-ii.jpg" alt=""></div>
+            <div><img src="media/article/Thumb.jpg" alt=""></div>
             <div class="pArt">Hay muchas formas de hacer una secuela, pero una de las que mejor suelen funcionar es la de apostar por el clásico "más y mejor" de lo visto en la entrega original. Little Nightmares fue una de las sorpresas más agradables que nos dejó la pasada generación, un humilde y pequeño título de terror que supo dejar huella con su apabullante diseño artístico, sus tensas situaciones y su críptica y terrorífica historia. Una aventura con muchísima personalidad y con un encanto único que nos conquistó y que ahora está a punto de recibir una segunda parte que apuesta precisamente por expandir y mejorar la fórmula en todos los sentidos posibles e imaginables.</div>
             <div><iframe style="border-radius: 20px;" width="560" height="315" src="https://www.youtube.com/embed/xD54eHGVgXU?si=k5cMgivpjwWX8MA7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             <div class="pArt">Esto no es algo que nos pille de nuevas, ya que fue justo lo que os comentamos en octubre cuando pudimos probar una demo a la que nos dieron acceso, pero ahora, a tan solo un mes de su lanzamiento final y tras haber jugado sus dos primeras fases de principio a fin, podemos confirmaros que el trabajo de Tarsier Studios con este nuevo juego nos está pareciendo impecable.
@@ -257,11 +260,42 @@
                 </div>
             </a>
 
+     <div class="capsulaVideojoc DisplayNoneL">
+                <div class="capsaJoc">
+                    <div class="seguirHeart"><img class="svgM" src="media/icon/HeartEmpty.svg" alt=""></div>
+                    <p><a class="accent pLite" href="LittleNightmares2.html">Ver Juego</a><img class="svgXS" src="media/icon/ArrowButtonAccent.svg" alt=""></p>
+                    <a href="LittleNightmares2.html" class="blackHover"></a>
+                    <img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/860510/library_600x900.jpg" alt="">
+                    <div class="plataformes">
+                        <div class="pc"><p class="white bold">PC</p></div>
+                        <div class="ps"><img src="media/icon/logos/play.svg" alt=""></div>
+                        <div class="xbox"><img src="media/icon/logos/xbox.svg" alt=""></div>
+                        <div class="swch"><img src="media/icon/logos/switch.svg" alt=""></div>
+                    </div>
+                   
+                    <div class="nota">8,5</div>
+
+                    
+                </div>
+                <div class="capsulaVideojocTXT">
+                    <h2>Little Nightmares II</h2>
+                    <p>
+                        <p class="white">Lanzamiento: <span class="white3">10/2/2021</span></p>
+                        <p class="white">Género: <span class="white3">Aventura de exploración y puzles / Plataformas de puzles / Terror</span></p>
+                     <h2></h2>
+                        <p class="white">Desarollo: <span class="white3">Tarsier Studios</span></p>
+                        <p class="white">Producción: <span class="white3">BANDAI NAMCO Entertainment</span></p>
+                    </p>
+                    <div class="verJuegoResponsive"><a class="pLiteButton black verJuegoResponsive" href="LittleNightmares2.html"><button class="botoIcon pLiteButton black">Ver Juego<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
+                    <div><a class="pLiteButton black" href="https://www.g2a.com/es/search?query=little%20nightmares%202" target="_blank"><button class="botoIcon pLiteButton black">Comprar<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
+                </div>
+            </div>
+
 
 
   <div class="comentaris">
     <div class="capceleraComents">
-      <div><div class="iconComents"><img class="svgL" src="media/icon/Coments.svg" alt=""><p>20</p></div><p class="white1">Comentarios</p></div>
+      <div><div class="iconComents"><img class="svgL" src="media/icon/Coments.svg" alt=""><p>03</p></div><p class="white1">Comentarios</p></div>
       <div class="filtresComents"><a><p class="white textboto" data-filtre="0">Populares</p></a>
       <a><p class="accent textboto" data-filtre="0">Recientes</p></a>
     <a><p class="white textboto" data-filtre="0">Antiguos</p></a></div>
@@ -269,12 +303,12 @@
     <div class="Coments">
       <div class="capsaComent">
         <div class="Perfil">
-          <img src="media/profile/4.webp" alt="">
+          <img src="media/icon/Profile.png" alt="">
           <p class="white1">DonSimonHD</p>
           
         </div>
         <form action="">
-          <textarea placeholder="Unete a la conversación ..." name="" id=""></textarea>
+          <textarea class="pLite" placeholder="Unete a la conversación ..." name="" id="" required></textarea>
           <button class="botoIcon pLite">Publicar <img src="media/icon/ArrowButton.svg" alt=""></button>
         </form>
       </div>
@@ -348,7 +382,7 @@
         
         <div class="colRight">
 
-            <div class="capsulaVideojoc">
+            <div class="capsulaVideojoc DisplayNoneM">
                 <div class="capsaJoc">
                     <div class="seguirHeart"><img class="svgM" src="media/icon/HeartEmpty.svg" alt=""></div>
                     <p><a class="accent pLite" href="LittleNightmares2.html">Ver Juego</a><img class="svgXS" src="media/icon/ArrowButtonAccent.svg" alt=""></p>
@@ -374,65 +408,65 @@
                         <p class="white">Desarollo: <span class="white3">Tarsier Studios</span></p>
                         <p class="white">Producción: <span class="white3">BANDAI NAMCO Entertainment</span></p>
                     </p>
-                    <div class="verJuegoResponsive"><a class="pLiteButton black verJuegoResponsive" href="LittleNighmares2.html"><button class="botoIcon pLiteButton black">Ver Juego<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
+                    <div class="verJuegoResponsive"><a class="pLiteButton black verJuegoResponsive" href="LittleNightmares2.html"><button class="botoIcon pLiteButton black">Ver Juego<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
                     <div><a class="pLiteButton black" href="https://www.g2a.com/es/search?query=little%20nightmares%202" target="_blank"><button class="botoIcon pLiteButton black">Comprar<img src="media/icon/ArrowButton.svg" alt=""></a></button></div>
                 </div>
             </div>
 
-            <div class="Promo1">
+            <div class="Promo1 DisplayNoneM">
                 <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
                 <img class="imgPromo" src="media/promo/nvidia.jpg" alt="">
               </div>
         
               <div class="NotiLateral">
+
+        <div class="titolSec">
+          <h2>Últimas publicaciones</h2>
+          <button class="boto2 pLite">Ver más</button>
+        </div>
+
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2114740/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 0.3 horas</p>
+            <p class="pLite white3">Blasphemous 2</p>
+            <p class="bold white hoverNotiLateral maxLenght3">Este juego de terror cooperativo para seis jugadores ya es una de las primeras sorpresas del año en Steam</p>
+          </div>
+        </div>
+        </div>
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1313140/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 1 hora</p>
+            <p class="pLite white3">Impresiones Cult of the Lamb</p>
+            <p class="bold white hoverNotiLateral maxLenght3">El bonito RPG táctico pixel art 'Arco' ya tiene fecha de lanzamiento en PC y Switch</p>
+          </div>
+        </div>
+        </div>
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1128000/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 1 hora</p>
+            <p class="pLite white3">Análisis Split Fiction</p>
+            <p class="bold white hoverNotiLateral maxLenght3">La mejor y más completa aventura cooperativa del estudio, superando a 'It Takes Two'</p>
+          </div>
+        </div>
+        </div>
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 1 hora</p>
+            <p class="pLite white3">InZoi</p>
+            <p class="bold white hoverNotiLateral maxLenght3">Krafton logra cifras récord en 2025 gracias al éxito mundial de inZOI y PUBG</p>
+          </div>
+        </div>
+        </div>
         
-                <div class="titolSec">
-                  <h2>Últimas publicaciones</h2>
-                  <button class="boto2 pLite">Ver más</button>
-                </div>
-        
-                <div class="CapsulaNotiLateral">
-                  <div>
-                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                  <div class="CapsulaNotiLateralTEXT">
-                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                    <p class="pLite white3">Impresiones Animal Crossing</p>
-                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                  </div>
-                </div>
-                </div>
-                <div class="CapsulaNotiLateral">
-                  <div>
-                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                  <div class="CapsulaNotiLateralTEXT">
-                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                    <p class="pLite white3">Impresiones Animal Crossing</p>
-                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                  </div>
-                </div>
-                </div>
-                <div class="CapsulaNotiLateral">
-                  <div>
-                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                  <div class="CapsulaNotiLateralTEXT">
-                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                    <p class="pLite white3">Impresiones Animal Crossing</p>
-                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                  </div>
-                </div>
-                </div>
-                <div class="CapsulaNotiLateral">
-                  <div>
-                  <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                  <div class="CapsulaNotiLateralTEXT">
-                    <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                    <p class="pLite white3">Impresiones Animal Crossing</p>
-                    <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                  </div>
-                </div>
-                </div>
-                
-                </div>
+        </div>
         
                 <div class="Promo1 DisplayNoneM">
                   <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
@@ -521,60 +555,58 @@
                         <img class="imgPromo" src="media/promo/nvidia.jpg" alt="">
                       </div>
 
-                      <div class="NotiLateral">
-        
-                        <div class="titolSec">
-                          <h2>Últimas publicaciones</h2>
-                          <button class="boto2 pLite">Ver más</button>
-                        </div>
-                
-                        <div class="CapsulaNotiLateral">
-                          <div>
-                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                          <div class="CapsulaNotiLateralTEXT">
-                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                            <p class="pLite white3">Impresiones Animal Crossing</p>
-                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                          </div>
-                        </div>
-                        </div>
-                        <div class="CapsulaNotiLateral">
-                          <div>
-                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                          <div class="CapsulaNotiLateralTEXT">
-                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                            <p class="pLite white3">Impresiones Animal Crossing</p>
-                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                          </div>
-                        </div>
-                        </div>
-                        <div class="CapsulaNotiLateral">
-                          <div>
-                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                          <div class="CapsulaNotiLateralTEXT">
-                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                            <p class="pLite white3">Impresiones Animal Crossing</p>
-                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                          </div>
-                        </div>
-                        </div>
-                        <div class="CapsulaNotiLateral">
-                          <div>
-                          <div class="CapsulaNotiLateralIMG"><img src="media/jocs/arco.jpg" alt=""></div>
-                          <div class="CapsulaNotiLateralTEXT">
-                            <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-                            <p class="pLite white3">Impresiones Animal Crossing</p>
-                            <p class="bold white hoverNotiLateral">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
-                          </div>
-                        </div>
-                        </div>
+                     <div class="NotiLateral">
 
-                      
-                        
-                        </div>
+        <div class="titolSec">
+          <h2>Últimas publicaciones</h2>
+          <button class="boto2 pLite">Ver más</button>
+        </div>
+
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2379780/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 0.3 horas</p>
+            <p class="pLite white3">Balatro</p>
+            <p class="bold white hoverNotiLateral maxLenght3">Este juego de terror cooperativo para seis jugadores ya es una de las primeras sorpresas del año en Steam</p>
+          </div>
+        </div>
+        </div>
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/219740/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 1 hora</p>
+            <p class="pLite white3">Impresiones Don't Starve</p>
+            <p class="bold white hoverNotiLateral maxLenght3">El bonito RPG táctico pixel art 'Arco' ya tiene fecha de lanzamiento en PC y Switch</p>
+          </div>
+        </div>
+        </div>
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 1 hora</p>
+            <p class="pLite white3">Análisis Bloons TD 6</p>
+            <p class="bold white hoverNotiLateral maxLenght3">La mejor y más completa aventura cooperativa del estudio, superando a 'It Takes Two'</p>
+          </div>
+        </div>
+        </div>
+        <div class="CapsulaNotiLateral">
+          <div>
+          <div class="CapsulaNotiLateralIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/397740/header.jpg" alt=""></div>
+          <div class="CapsulaNotiLateralTEXT">
+            <p class="pLite accent" style="text-align: right;">hace 1 hora</p>
+            <p class="pLite white3">Reportaje Hylics</p>
+            <p class="bold white hoverNotiLateral maxLenght3">Krafton logra cifras récord en 2025 gracias al éxito mundial de inZOI y PUBG</p>
+          </div>
+        </div>
+        </div>
+        
+        </div>
                         
                         <div class="PStickyPromo">
-                        <div class="Promo1 DisplayNoneM">
+                        <div class="Promo1">
                             <img class="svgS absolut16" src="media/icon/Close.svg" alt="">
                             <img class="imgPromo" src="media/promo/sony.jpg" alt="">
                           </div></div>
@@ -592,7 +624,7 @@
 <!-- Inici Peuet -->
  <footer>
     
-  <div class="banda">
+  <div class="banda" href="QuienesSomos.html">
       <div>
       <p class="white">Lo último en videojuegos de la mano de Vandal </p>
       <img class="svgXS" src="media/icon/DotAccent.svg" alt="">
@@ -636,17 +668,17 @@
           </div></div>
           <div class="FootCol3">
               <div class="XXSSFooter">
-                  <div><div class="XHover"></div></div>
-                  <div><div class="InstagramHover"></div></div>
-                  <div><div class="YoutubeHover"></div></div>
-                  <div><div class="FacebookHover"></div></div>
-                  <div><div class="TikTokHover"></div></div>
+                  <a href="https://x.com/VandalOnline?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><div class="XHover"></div></a>
+                  <a href="https://www.instagram.com/vandalnet/?hl=es "><div class="InstagramHover"></div></a>
+                  <a href="https://www.youtube.com/vandal"><div class="YoutubeHover"></div></a>
+                  <a href="https://www.facebook.com/vandalonline/?locale=es_ES"><div class="FacebookHover"></div></a>
+                  <a href="https://www.tiktok.com/@vandalonline?lang=es"><div class="TikTokHover"></div></a>
               </div>
               <a class="textbotoFooter" href="QuienesSomos.html">¿Quiénes somos?</a>
               <a class="textbotoFooter" href="#">Aviso Legal</a>
               <a class="textbotoFooter" href="#">Politíca de cookies</a>
               <a class="textbotoFooter" href="#">Publicidad / Advertising</a>
-              <a class="textbotoFooter" href="#">Contacta</a>
+              <a class="textbotoFooter" href="QuienesSomos.html#Contacta">Contacta</a>
               <a href="Portada.html" target="_blank" class="LogoFooter">
                   <div><img src="media/vandal/IMAGOTIP.svg" alt="VANDAL"></div>
               </a>
