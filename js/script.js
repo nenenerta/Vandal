@@ -38,66 +38,85 @@ const prev = document.getElementsByClassName("prev")[0];
 const indicators = document.querySelectorAll(".carouselIndicators img");
 
 let currentIndex = 0;
+let touchStartX = 0;
+let touchEndX = 0;
 
+// Funció: Canviar al següent slide
 function NextCarrHome() {
-  // Avança primer
   currentIndex++;
-
-  // Reinicia si hem arribat al final
   if (currentIndex >= slides.length) {
     currentIndex = 0;
   }
-
-  // Elimina la classe "carouselSlideSelected" de tots els elements
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].classList.remove("carouselSlideSelected");
-  }
-
-  // Afegeix "carouselSlideSelected" al nou slide
-  slides[currentIndex].classList.add("carouselSlideSelected");
-
-  updateIndicators();
-
+  updateSlide();
 }
 
+// Funció: Canviar al slide anterior
 function PrevCarrHome() {
-  // Retrocedeix a l'element anterior
   currentIndex--;
-
-  // Si és menor que 0, passa a l'últim
   if (currentIndex < 0) {
     currentIndex = slides.length - 1;
   }
+  updateSlide();
+}
 
-  // Elimina la classe "carouselSlideSelected" de tots els elements
+// Funció: Actualitza els indicadors i visibilitat del slide
+function updateSlide() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.remove("carouselSlideSelected");
   }
-
-  // Afegeix "carouselSlideSelected" a l'element actual
   slides[currentIndex].classList.add("carouselSlideSelected");
   updateIndicators();
 }
 
+// Funció: Actualitza els indicadors visuals (punts)
 function updateIndicators() {
   for (let i = 0; i < indicators.length; i++) {
-    if (i === currentIndex) {
-      indicators[i].src = "media/icon/DotAccent.svg";
-    } else {
-      indicators[i].src = "media/icon/DotWhite.svg";
-    }
+    indicators[i].src = (i === currentIndex)
+      ? "media/icon/DotAccent.svg"
+      : "media/icon/DotWhite.svg";
   }
 }
 
+// Funció: autoplay (reproducció automàtica)
 function autoPlayCarousel() {
-  for (let i = 1; i < slides.length; i++) {
-    setTimeout(() => {
-      NextCarrHome();
-    }, i * 8000);
+  setInterval(() => {
+    NextCarrHome();
+  }, 8000);
+}
+
+// 👇 Afegim suport tàctil si ample <= 991px
+function enableTouchSwipe() {
+  const carouselContainer = document.querySelector(".carouselContainer"); // ajusta si tens un altre contenidor
+
+  if (!carouselContainer) return;
+
+  carouselContainer.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  carouselContainer.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  });
+}
+
+function handleSwipe() {
+  const minSwipeDistance = 50;
+  if (touchEndX < touchStartX - minSwipeDistance) {
+    NextCarrHome(); // Swipe esquerra → següent
+  } else if (touchEndX > touchStartX + minSwipeDistance) {
+    PrevCarrHome(); // Swipe dreta → anterior
   }
 }
 
-window.addEventListener('load', autoPlayCarousel);
+window.addEventListener("load", () => {
+  autoPlayCarousel();
+
+  if (window.innerWidth <= 991) {
+    enableTouchSwipe();
+  }
+});
+
 
 
 
@@ -201,7 +220,7 @@ function banda() {
   }, 1000);
   setTimeout(() => {
     document.querySelector(".bandaInteractiva").style.padding = "0px 0px 0px 0px";
-  }, 7000);
+  }, 22000);
 }
 
 window.addEventListener('load', banda);
@@ -286,8 +305,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (allContents[i] !== current.nextElementSibling) {
         allContents[i].classList.add("accHeight");
         allTitles[i].classList.remove("accTit");
-  
-        // Canviem icona a PLUS
+
         let img = allTitles[i].querySelector("img");
         if (img) img.src = "media/icon/Plus.svg";
       }
@@ -331,7 +349,7 @@ document.addEventListener("DOMContentLoaded", function () {
             item.classList.add("accent");
             item.classList.remove("white2");
 
-            // Mostrar només la secció corresponent
+            // Mostrar només la secció que toca
             sections.forEach((section, i) => {
                 section.style.display = i === index ? "block" : "none";
             });
@@ -351,40 +369,32 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let menuOpen = false;
 
-  // Obrir/tancar menú principal
+  // Obrir i tancar menú principal
   menuHamburg.addEventListener('click', () => {
       if (!menuOpen) {
           ulPrincipal.style.transform = 'translateX(0)';
           menuOpen = true;
       } else {
           ulPrincipal.style.transform = 'translateX(-200%)';
-          // Tancar també submenús quan es tanca el principal
-          articulosMenu.style.transform = 'translateX(-200%)';
-          juegosMenu.style.transform = 'translateX(-200%)';
+          articulosMenu.classList.remove('visible');
+          juegosMenu.classList.remove('visible');
           menuOpen = false;
       }
   });
 
-  // Obrir/tancar submenú Artículos
-  document.querySelector('.ArticulosMenu').addEventListener('click', (e) => {
-      e.stopPropagation(); 
-      if (articulosMenu.style.display === 'block') {
-          articulosMenu.style.display = 'none';
-      } else {
-          articulosMenu.style.display = 'block';
-      }
-  });
-
-  // Obrir/tancar submenú Juegos
-  document.querySelector('.JuegosMenu').addEventListener('click', (e) => {
-      e.stopPropagation();
-      if (juegosMenu.style.display === 'block') {
-          juegosMenu.style.display = 'none';
-      } else {
-          juegosMenu.style.display = 'block';
-      }
-  });
 });
+
+  const articulosMenu = document.querySelector('.menuArticulosResponsive');
+   const juegosMenu = document.querySelector('.menuJuegosResponsive');
+
+function OpenArticle() {
+  articulosMenu.classList.toggle('visible');
+  juegosMenu.classList.remove('visible');
+}
+function OpenJocs() {
+  juegosMenu.classList.toggle('visible');
+  articulosMenu.classList.remove('visible');
+}
 
 
 
