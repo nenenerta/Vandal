@@ -48,6 +48,7 @@
     display: none;
 }
 
+
 .menuArticulosResponsive a{
     color: var(--black1);
 }
@@ -75,6 +76,10 @@
 }
 .menuJuegosResponsive a{
     color: var(--black1);
+}
+
+.visible {
+    display: block;
 }
 .ulPrincipal{
     display: flex;
@@ -122,6 +127,7 @@
     left: 186px;
     display: none;
 }
+
 
 .menuArticulos a{
     color: var(--black1);
@@ -264,7 +270,9 @@
     }
   }
   
-
+.mt60{
+    margin-top: 60px;
+}
   .banda, .bandaInteractiva{
     padding: 0px 0px 0px 0px;
     background-color: var(--black2);
@@ -322,7 +330,7 @@
     margin-bottom: 24px;
     border-bottom: grey dashed 1px;
 }
-.XXSSFooter>div{
+.XXSSFooter>a{
     margin: 0px 12px;
     display: flex;
     align-items: center;
@@ -748,9 +756,6 @@ margin-right: auto;
     height: 25vw;
 }
 
-
-
-
 .capsulaVideojoc{
     margin-bottom: 60px;
     display: flex;
@@ -759,7 +764,6 @@ margin-right: auto;
    
 }
 .capsaJoc{
-    width: 47%;
     height: 100%;
     border-radius: 15px;
     overflow: hidden;
@@ -1245,6 +1249,7 @@ margin-top: 32px;
     padding: 5px 10px;
     border-radius: 10px;
     transition: background-color .1s;
+    cursor: pointer;
 }
 
 .generes>div:hover{
@@ -1351,6 +1356,7 @@ margin-top: 16px;
 .notesJocP{
     display: flex;
     height: 30%;
+    padding-top: 70px;
 }
 
 .notesJocP img{
@@ -1619,7 +1625,7 @@ margin-top: 16px;
   .carousel-indicators, .carousel-indicatorsx4{
     display: flex;
     justify-content: center;
-    margin-top: 32px;
+    margin-top: 16px;
   }
   .carousel-indicators img, .carousel-indicatorsx4 img{
     margin: 0px 4px;
@@ -1669,7 +1675,7 @@ margin-top: 16px;
   }
   .CapsulaNotiIMGx4{
     width: 100%;
-    height: 12vh;
+    height: 15vh;
     object-fit: cover;
       overflow: hidden;
       display: flex;
@@ -1737,7 +1743,7 @@ margin-top: 16px;
   }
   .carouselTrackx4{
     width: 90%;
-    height: 35vh;
+    height: 33vh;
    overflow: hidden;
    position: relative;
    border-radius: 15px;
@@ -1854,6 +1860,7 @@ margin-top: 16px;
   -webkit-line-clamp: 1;
   line-clamp: 1;
   overflow: hidden;
+  padding-bottom: 5px;
 }
 .capsulaVideojocRelacionat>div{
     width: 100%;
@@ -1973,7 +1980,7 @@ margin-top: 16px;
 
 @media (max-width: 991px) {
     .banda, .bandaInteractiva{
-        height: 94px;
+        height: 60px;
         background-color: var(--black1);
         display: flex;
         align-items: center;
@@ -1983,11 +1990,14 @@ margin-top: 16px;
       .banda>div, .bandaInteractiva>div{
         display: flex;
         align-items: center;
-        animation: bandaHoritzontal 11s infinite;
+        animation: bandaHoritzontal 13s infinite;
         animation-timing-function: linear;
         white-space: nowrap;
         
       }
+      .mt60{
+    margin-top: 32px;
+    }
       .menuPrinciapl{
         display: none;
       }
@@ -2038,11 +2048,10 @@ margin-top: 16px;
         height: 350px;
     }
     .capsaJoc{
-        width: 30%;
        height: 300px;
        }
        .capsulaVideojocTXT{
-        width: 65%;
+        width: 70%;
        }
        .verJuegoResponsive{
         display: block;
@@ -2104,8 +2113,9 @@ margin-top: 16px;
       height: 50vh;
     }
     .FitxaJoc{
-        flex-direction: column;
-        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    
     }
     .FitxaJoc>div{
         width: 100%;
@@ -2114,6 +2124,7 @@ margin-top: 16px;
         justify-content: center;
     }
     .FitxaJoc h1{
+        width: 100%;
     margin-bottom: 0px;
 }
     .AccJocP{
@@ -2124,12 +2135,12 @@ margin-top: 16px;
         height: 30%;
         margin: 32px 0px;
         justify-content: center;
+        padding-top: 0px;
     }
-    .capsulaVideojocP{flex-direction: column;
-    }
+    
     .generes{
-    flex-direction: column;
-    text-align: center;}
+        width: 100%;
+    }
     .generes>div{
     margin-top: 16px;}
     .menuContingutJoc{
@@ -2137,20 +2148,28 @@ margin-top: 16px;
         overflow: scroll;
         left: 0px;
     }
+    .capsulaVideojocP{
+        width: 100%;
+    }
+    .FitxaJocRight{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
     .ForoLateral{
         display: none;
     }
+    .RedactorsQS{
+        margin-bottom: 0px;
+    }
     .Redactor{
-    width:100%;
+    width:48%;
     display: flex;}
     .Redactor>div{
-        width: 300px;
+        width: 400px;
         align-items: center;
     }
-    .RedactorXXSS{
-        flex-direction: column;
-        align-items: stretch;
-    }
+    
     .RedactorTXT{
         justify-content: center;
         align-items: center;
@@ -2161,6 +2180,9 @@ margin-top: 16px;
     .titular>div{
         width: 100%;
     }
+    .titular>div>a{
+        padding-top: 10px;
+    }
     .ContArt{
         width: 100%;
 
@@ -2169,6 +2191,9 @@ margin-top: 16px;
     width: 100%;
     height: 350px;
 }
+#animation{
+    width: 30%;
+}
 .shacreCircle{
     margin-top: 16px;
 }
@@ -2176,7 +2201,18 @@ margin-top: 16px;
 .HeightAccJocP {
     scrollbar-width: thin;
   }
-
+  .img1descubreRegistro, .img2descubreRegistro{
+        display: none;
+    }
+    .CapsulaNotix4Mobil{
+        display: none;
+    }
+    .CapsulaNotix4{
+    width: 48%;
+  }
+  .CapsulaNotix4Video{
+      width: 48%;
+    }
 }
 
 /* ----------------Responsive Mòbil------------------------------------------------*/
@@ -2188,6 +2224,9 @@ margin-top: 16px;
     }
     .barraMenu img{
         margin-left: 0;
+    }
+    .mt60{
+    margin-top: 24px;
     }
     .menuPrinciaplResponsive{
         padding: 24px 16px;
@@ -2210,7 +2249,8 @@ margin-top: 16px;
     overflow: scroll;
     overflow-y: hidden;
     scrollbar-color: var(--white3) var(--black1);
-    scrollbar-width: none;
+    scrollbar-width: thin;
+
   }
   .carouselTrack{
     width: 100%;
@@ -2229,5 +2269,166 @@ margin-top: 16px;
     .descubreRegistro>img{
         display: none;
     }
+    .capsulaVideojocP{flex-direction: column;
+    }
+    .titolSec>h2{
+        max-width: 240px;
+    }
+    .CapsulaNotix4Mobil2{
+        display: none;
+    }
+    .CapsulaNotix4{
+    width: 100%;
   }
-  
+  .CapsulaNotix4Video{
+      width: 100%;
+    }
+    .descubreRegistro{
+        margin-top: 60px;
+    }
+    .LogoFooter{
+        width: 100%;
+    }
+    .capceleraComents{
+        flex-wrap: wrap;
+    }
+    .Redactor{
+        width: 100%;
+    }
+    .capsulaVideojoc{
+        flex-wrap: wrap;
+    }
+    .capsaJoc{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .capsulaVideojocTXT>p, .capsulaVideojocTXT>h2{
+        display: none;
+    }
+    .capsulaVideojocTXT{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 24px;
+    }
+    .capceleraComents>div{
+        margin-top: 16px;
+    }
+    .PStickyPromo{
+        padding-top: 24px;
+    }
+    .contentComent>div>hr{
+        display: none;
+    }
+    .generes{
+        flex-wrap: wrap;
+    }
+    .capsaJocP{
+        width: 100%;
+    }
+    .capsulaVideojocTXTP{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+    .capsulaVideojocTXTP button{
+        margin-top: 16px;
+    }
+    .CapsaNota{
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .menuContingutJoc{
+            justify-content: space-evenly;
+        overflow: scroll;
+        scrollbar-color: var(--white3) var(--black1);
+        scrollbar-width: thin;
+    }
+    .menuContingutJoc>p{
+        padding: 0px 16px;
+        min-width: 140px;
+        justify-content: center;
+        text-align: center;
+    }
+    .margintoptitu{
+        margin-top: 60px;
+    }
+    .capsulaVideojocRelacionat{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .JocsRelacionats{
+        width: 100%;
+        overflow: scroll;
+        scrollbar-color: var(--white3) var(--black1);
+        scrollbar-width: thin;
+    }
+    .capsulaVideojocRelacionat>div{
+        width: auto;
+    }
+    .AccJocP{
+        margin-bottom: 60px;
+    }
+    .galImg>div{
+        width: calc(50% - 16px);
+    }
+    .OverlayImatges{
+        width: 95%;
+        padding: 70px 8p
+    }
+    .nextOverlay, .prevOverlay{
+        display: none;
+    }
+    .OverlayImatges>div>img{
+        width: 100%;
+    }
+    .OverlayValorar{
+        width: 95%;
+    }
+    #animation{
+        width: 90%;
+    }
+    .Redactor>div{
+        width: 100%;
+    }
+    .JCR{
+        justify-content: center;
+    }
+    .ContArt>div{
+        margin-bottom: 40px;
+    }
+    .PSticky>div{
+        padding-top: 60px;
+    }
+    .capsaCar>h3{
+
+        display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 4;
+      line-clamp: 4;
+      overflow: hidden;
+    }
+  }
+
+
+
+
+
+
+
+.DisplayNoneL{
+  display: none;
+}
+  @media screen and (max-width: 991px) {
+  .Promo1{
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  .DisplayNoneM{
+    display: none;
+  }
+  .DisplayNoneL{
+  display: flex;
+}
+}
