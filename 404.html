@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="css/carru.css">
 </head>
 <body>
-   <!-- -----------------------Log In----------------------- -->
-    <div class="login">
+     <!-- -----------------------Log In----------------------- -->
+      <div class="login">
         <div id="conVandalOverlay">
             <img src="media/vandal/IMAGOTIP.svg" alt="">
         </div>
@@ -100,10 +100,10 @@
     <nav class="menuPrinciapl">
         <ul class="ulPrincipal">
             <li class="li ulPrincipalli" onclick="showLogIn()"><img src="media/icon/Profile.png" alt=""></li>
-            <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
+            <li class="li ulPrincipalli"><a class="textMenu accent" href="Portada.html">Portada</a></li>
             <li class=" ArticulosMenu  ulPrincipalli li"><a class="textMenu" href="">Artículos</a>
                 <ul class="menuArticulos">
-                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Noticias</a></li>
                     <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
                     <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
                     <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
@@ -146,10 +146,10 @@
     <div class="menuHamburg"><img class="svgM" src="media/icon/MenuHmburg.svg" alt=""></div>
     <ul class="ulPrincipalResponsive">
         <li class="li" onclick="showLogIn()"><img class="svgL" src="media/icon/Profile.png" alt=""></li>
-        <li class="li ulPrincipalli"><a class="textMenu" href="Portada.html">Portada</a></li>
-        <li class=" ArticulosMenu  ulPrincipalli li"><p class="textMenu">Artículos</p>
+        <li class="li ulPrincipalli"><a class="textMenu accent" href="Portada.html">Portada</a></li>
+        <li class=" ArticulosMenu  ulPrincipalli li" onclick="OpenArticle()"><p class="textMenu">Artículos</p>
             <ul class="menuArticulosResponsive">
-                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Noticias</a></li>
                 <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
                 <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
                 <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
@@ -157,7 +157,7 @@
                 <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
             </ul>    
         </li>
-        <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="#">Juegos</a>
+        <li class="JuegosMenu li ulPrincipalli" onclick="OpenJocs()"><a class="textMenu" href="#">Juegos</a>
             <ul class="menuJuegosResponsive">
                 <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
                 <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
@@ -185,6 +185,10 @@
         <img class="svgS" src="media/icon/Search.svg" alt="">
     </div>
 </nav>
+
+
+
+<!-- -------------------------fi menu -->
 
 
 
@@ -222,7 +226,7 @@
       <p class="bold white CapsulaNotiAccentx4">Hemos probado algunos de los third-parties que estarán disponibles en Nintendo Switch 2 y os contamos nuestras impresiones sobre ellos.</p>
     </div>
   </div>
-  </div><div class="CapsulaNotix4">
+  </div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
     <div>
     <div class="CapsulaNotiIMGx4"><img src="media/jocs/thehundredline.jpg" alt=""></div>
     <div class="CapsulaNotiTEXT">
@@ -262,7 +266,7 @@
       <p class="bold white CapsulaNotiAccentx4">Estos son todos los trucos y códigos de la consola en Starfield para hacerte más fácil tu vida espacial. Introduce cualquier comando para obtener sus efectos.</p>
     </div>
   </div>
-  </div><div class="CapsulaNotix4">
+  </div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
     <div>
     <div class="CapsulaNotiIMGx4"><img src="media/jocs/witcher3.jpg" alt=""></div>
     <div class="CapsulaNotiTEXT">
@@ -302,7 +306,7 @@
       <p class="bold white CapsulaNotiAccentx4">Bienvenidos a nuestra guía completa de Demon's Souls. Descubre todo sobre armas, hechizos, jefes y rutas para sobrevivir a la experiencia en Boletaria.</p>
     </div>
   </div>
-  </div><div class="CapsulaNotix4">
+  </div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
     <div>
     <div class="CapsulaNotiIMGx4"><img src="media/jocs/sims4.jpg" alt=""></div>
     <div class="CapsulaNotiTEXT">
@@ -355,7 +359,7 @@
 <!-- Inici Peuet -->
  <footer>
     
-  <div class="banda">
+  <div class="banda" href="QuienesSomos.html">
       <div>
       <p class="white">Lo último en videojuegos de la mano de Vandal </p>
       <img class="svgXS" src="media/icon/DotAccent.svg" alt="">
@@ -399,17 +403,17 @@
           </div></div>
           <div class="FootCol3">
               <div class="XXSSFooter">
-                  <div><div class="XHover"></div></div>
-                  <div><div class="InstagramHover"></div></div>
-                  <div><div class="YoutubeHover"></div></div>
-                  <div><div class="FacebookHover"></div></div>
-                  <div><div class="TikTokHover"></div></div>
+                  <a href="https://x.com/VandalOnline?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><div class="XHover"></div></a>
+                  <a href="https://www.instagram.com/vandalnet/?hl=es "><div class="InstagramHover"></div></a>
+                  <a href="https://www.youtube.com/vandal"><div class="YoutubeHover"></div></a>
+                  <a href="https://www.facebook.com/vandalonline/?locale=es_ES"><div class="FacebookHover"></div></a>
+                  <a href="https://www.tiktok.com/@vandalonline?lang=es"><div class="TikTokHover"></div></a>
               </div>
               <a class="textbotoFooter" href="QuienesSomos.html">¿Quiénes somos?</a>
               <a class="textbotoFooter" href="#">Aviso Legal</a>
               <a class="textbotoFooter" href="#">Politíca de cookies</a>
               <a class="textbotoFooter" href="#">Publicidad / Advertising</a>
-              <a class="textbotoFooter" href="#">Contacta</a>
+              <a class="textbotoFooter" href="QuienesSomos.html#Contacta">Contacta</a>
               <a href="Portada.html" target="_blank" class="LogoFooter">
                   <div><img src="media/vandal/IMAGOTIP.svg" alt="VANDAL"></div>
               </a>
