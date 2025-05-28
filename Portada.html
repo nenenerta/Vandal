@@ -105,7 +105,7 @@
             <li class="li ulPrincipalli"><a class="textMenu accent" href="Portada.html">Portada</a></li>
             <li class=" ArticulosMenu  ulPrincipalli li"><a class="textMenu" href="">Artículos</a>
                 <ul class="menuArticulos">
-                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                    <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Noticias</a></li>
                     <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
                     <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
                     <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
@@ -149,9 +149,9 @@
     <ul class="ulPrincipalResponsive">
         <li class="li" onclick="showLogIn()"><img class="svgL" src="media/icon/Profile.png" alt=""></li>
         <li class="li ulPrincipalli"><a class="textMenu accent" href="Portada.html">Portada</a></li>
-        <li class=" ArticulosMenu  ulPrincipalli li"><p class="textMenu">Artículos</p>
+        <li class=" ArticulosMenu  ulPrincipalli li" onclick="OpenArticle()"><p class="textMenu">Artículos</p>
             <ul class="menuArticulosResponsive">
-                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Notícias</a></li>
+                <li class="li" style="margin-top: 0;"><a class="textMenu2" href="">Noticias</a></li>
                 <li class="li"><a class="textMenu2" href="Analisis.html">Analisis</a></li>
                 <li class="li"><a class="textMenu2" href="Guias.html">Guias</a></li>
                 <li class="li"><a class="textMenu2" href="Trucos.html">Trucos</a></li>
@@ -159,7 +159,7 @@
                 <li class="li"><a class="textMenu2" href="Avances.html">Avances</a></li>
             </ul>    
         </li>
-        <li class="JuegosMenu li ulPrincipalli"><a class="textMenu" href="#">Juegos</a>
+        <li class="JuegosMenu li ulPrincipalli" onclick="OpenJocs()"><a class="textMenu" href="#">Juegos</a>
             <ul class="menuJuegosResponsive">
                 <li class="li" style="margin-top: 0;"><a class="textMenu2" href="Lanzamientos.html">Lanzamientos</a></li>
                 <li class="li"><a class="textMenu2" href="Populares.html">Populares</a></li>
@@ -192,18 +192,18 @@
 
 <!-- -------------------------fi menu -->
 
-  <div class="bandaInteractiva">
+  <a class="bandaInteractiva" href="QuienesSomos.html">
     <div>
     <p class="white">Lo último en videojuegos de la mano de Vandal </p>
     <img class="svgXS" src="media/icon/DotAccent.svg" alt="">
     <p class="white"> La segunda revista digital más antigua de España </p>
     <button class="botoIcon pLiteButton">¿Quiénes somos?<img src="media/icon/ArrowButton.svg" alt=""></button>
   </div>
-  </div>
+</a>
 
-  <section style="margin-top: 60px;">
+  <section class="mt60">
     <div class="titolSec titolSecCarru">
-      <h2>Notícias destacadas</h2>
+      <h2>Noticias destacadas</h2>
       <button class="boto2 pLite">Ver más</button>
     </div>
     <div class="carousel">
@@ -288,13 +288,13 @@
         <button class="boto2 pLite">Ver más</button>
       </div>
       <div class="notiTrack">
-      <a href="article.html" class="CapsulaNoti">
+      <a href="ImpresionesLN2.html" class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/860510/library_hero_2x.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-          <p class="pItalic white">Impresiones Animal Crossing</p>
-          <h3>Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</h3>
+          <p class="pItalic white">Impresiones Little Nightmares II</p>
+          <h3>Volvemos a adentrarnos en el universo de los miedos de la infancia para superar los dos primeros niveles de una secuela que apunta a convertirse en uno de los primeros juegazos de 2021.</h3>
         </div>
       </div>
     </a>
@@ -754,7 +754,7 @@
   
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/obliv.jpg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/730/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 7 horas</p>
           <p class="pItalic white">Análisis Oblivion Remastered</p>
@@ -764,7 +764,7 @@
       </div>
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/valorant.jpeg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/570/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 7 horas</p>
           <p class="pItalic white">Valorant</p>
@@ -775,7 +775,7 @@
       
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/animalSw2.jpg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/578080/841ea38bc58cabb70aef65365cf50bc2d79329d9/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 12 horas</p>
           <p class="pItalic white">Animal Crossing New Horizons</p>
@@ -785,7 +785,7 @@
       </div>
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/sparkZero.jpg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3432970/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 2 dias</p>
           <p class="pItalic white">Dragon Ball: Sparking! Zero</p>
@@ -796,7 +796,7 @@
       
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/bgDLC.png" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3419430/e8c9b865822618f3d3cd07757ddc60740c8e54b0/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 2 dias</p>
           <p class="pItalic white">Baldur's Gate 3</p>
@@ -806,7 +806,7 @@
       </div>
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/stardew.jpg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1172470/b7e2d0c4b5f34b6751269c359070f706ff6d59fe/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 3 dias</p>
           <p class="pItalic white">Stardew Valley</p>
@@ -816,7 +816,7 @@
       </div>
       <div class="CapsulaNoti">
         <div>
-        <div class="CapsulaNotiIMG"><img src="media/jocs/factorio.jpg" alt=""></div>
+        <div class="CapsulaNotiIMG"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3569430/ec4a65e1f4585772fb32205d53e0f33a69d0812c/header.jpg" alt=""></div>
         <div class="CapsulaNotiTEXT">
           <p class="pLite accent" style="text-align: right;">hace 4 dias</p>
           <p class="pItalic white">Factorio</p>
@@ -957,7 +957,7 @@
       <p class="bold white CapsulaNotiAccentx4">Esto es todo lo que necesitas saber para completar al 100% The Elder Scrolls IV: Oblivion Remastered. Regresa a Cyrodill y dessentraña los misterios de la conspiración que pretende acabar con el mundo.</p>
     </div>
   </div>
-  </div><div class="CapsulaNotix4">
+  </div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
     <div>
     <div class="CapsulaNotiIMGx4"><img src="media/jocs/shadow.jpg" alt=""></div>
     <div class="CapsulaNotiTEXT">
@@ -997,7 +997,7 @@
       <p class="bold white CapsulaNotiAccentx4">Estos son todos los trucos y códigos de la consola en Starfield para hacerte más fácil tu vida espacial. Introduce cualquier comando para obtener sus efectos.</p>
     </div>
   </div>
-  </div><div class="CapsulaNotix4">
+  </div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
     <div>
     <div class="CapsulaNotiIMGx4"><img src="media/jocs/witcher3.jpg" alt=""></div>
     <div class="CapsulaNotiTEXT">
@@ -1037,7 +1037,7 @@
       <p class="bold white CapsulaNotiAccentx4">Bienvenidos a nuestra guía completa de Demon's Souls. Descubre todo sobre armas, hechizos, jefes y rutas para sobrevivir a la experiencia en Boletaria.</p>
     </div>
   </div>
-  </div><div class="CapsulaNotix4">
+  </div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
     <div>
     <div class="CapsulaNotiIMGx4"><img src="media/jocs/sims4.jpg" alt=""></div>
     <div class="CapsulaNotiTEXT">
@@ -1112,7 +1112,7 @@
   <p class="bold white CapsulaNotiAccentx4">Una gran evolución del juego de acción RPG que nos conquistó hace 7 años: Impresiones Moonlighter 2 The Endless Vault</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
 <div>
 <div class="CapsulaNotiIMGx4"><img src="media/jocs/bananza.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
@@ -1121,7 +1121,7 @@
   <p class="bold white CapsulaNotiAccentx4">Donkey Kong Bananza propone entornos no lineales en que la exploración de superficies destructibles sustenta una jugabilidad adictiva y muy sorprendente.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
 <div class="CapsulaNotiIMGx4"><img src="media/jocs/wheelworld.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
@@ -1130,7 +1130,7 @@
   <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta: Probamos el vibrante Wheel World</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
 <div class="CapsulaNotiIMGx4"><img src="media/jocs/mariokartW.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
@@ -1152,31 +1152,34 @@
   <p class="bold white CapsulaNotiAccentx4">Ya hemos jugado a Atomfall, ¿el sleeper de 2025?: Sandbox, libertad total y toques de ciencia ficción clásica</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2622380/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances Elden Ring: Nightreign</p>
+  <p class="bold white CapsulaNotiAccentx4">Elden Ring: Nightreign Revoluciona el Género Soulsborne con su Modo Cooperativo"
+FromSoftware presenta una nueva propuesta en la saga, destacando por su jugabilidad cooperativa y combates ágiles, aunque con áreas de mejora en progresión y rejugabilidad.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3265250/b2180b5a89ebee18c7b879b646f8b69dc0182a03/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances MindsEye</p>
+  <p class="bold white CapsulaNotiAccentx4">Enfrenta Críticas y Teorías de Boicot a Pocas Semanas de su Lanzamiento"
+El CEO de Build a Rocket Boy denuncia una campaña de desprestigio mientras la comunidad debate sobre la calidad del juego.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2138330/bdbeea292270b8cd9dde1f2044a411624db58657/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances Cyberpunk 2</p>
+  <p class="bold white CapsulaNotiAccentx4">CD Projekt RED Anuncia Nueva Etapa en su Desarrollo"
+El estudio polaco confirma que el juego ha alcanzado la fase de preproducción, con un lanzamiento previsto para 2030.</p>
 </div>
 </div>
 </div>
@@ -1185,38 +1188,42 @@
 <div class="carouselSlidex4">
 <div class="CapsulaNotix4">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/despotism.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2486820/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances Sonic Racing: CrossWorlds</p>
+  <p class="bold white CapsulaNotiAccentx4">Promete Velocidad y Diversión en su Regreso"
+El equipo de Sonic Team, junto a desarrolladores de Initial D Arcade Stage, prepara un juego de carreras con vehículos transformables y acción sin límites.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3017860/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances Doom: The Dark Ages</p>
+  <p class="bold white CapsulaNotiAccentx4">Revive la Saga con Combate Pesado y Narrativa Profunda"
+La octava entrega de Doom ofrece una experiencia de combate más estratégica y una historia centrada en los orígenes del Doom Slayer.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2246340/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances Monster Hunter Wilds</p>
+  <p class="bold white CapsulaNotiAccentx4">Monster Hunter Wilds Introduce Ecosistemas Vivos y Cacerías Más Estratégicas"
+Capcom expande la franquicia con nuevos monstruos, biomas dinámicos y un sistema de elaboración mejorado.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/animalcrossing.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2001120/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Avances</p>
-  <p class="bold white CapsulaNotiAccentx4">Este juego enamora por su estética y atrapa por su mundo abierto en bicicleta</p>
+  <p class="pLite white3">Avances Split Fiction</p>
+  <p class="bold white CapsulaNotiAccentx4">La Aventura Cooperativa de Josef Fares Arrasa en Ventas y Críticas"
+El nuevo juego de Hazelight supera los 2 millones de unidades vendidas en su primera semana, con una recepción crítica excepcional.</p>
 </div>
 </div>
 </div>
@@ -1270,7 +1277,7 @@
 </div>
 </div>
 </a>
-<a href="https://www.youtube.com/watch?v=lfob115wGy4" target="_blank" class="CapsulaNotix4Video">
+<a href="https://www.youtube.com/watch?v=lfob115wGy4" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil2">
   <div>
   <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video2.avif" alt="">
   <div class="botoPlay"><div></div></div>
@@ -1281,7 +1288,7 @@
   </div>
   </div>
 </a>
-  <a href="https://www.youtube.com/watch?v=f_23EYORmlU" target="_blank" class="CapsulaNotix4Video">
+  <a href="https://www.youtube.com/watch?v=f_23EYORmlU" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil">
     <div>
     <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video3.avif" alt="">
     <div class="botoPlay"><div></div></div>
@@ -1292,7 +1299,7 @@
     </div>
     </div>
   </a>
-    <a href="https://www.youtube.com/watch?v=p800ydf4HYM" target="_blank" class="CapsulaNotix4Video">
+    <a href="https://www.youtube.com/watch?v=p800ydf4HYM" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil">
       <div>
       <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video4.avif" alt="">
       <div class="botoPlay"><div></div></div>
@@ -1317,7 +1324,7 @@
     </div>
     </div>
   </a>
-    <a href="https://www.youtube.com/watch?v=QEI0uxp-0MI" target="_blank" class="CapsulaNotix4Video">
+    <a href="https://www.youtube.com/watch?v=QEI0uxp-0MI" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil2">
       <div>
       <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video12.avif" alt="">
       <div class="botoPlay"><div></div></div>
@@ -1328,7 +1335,7 @@
       </div>
       </div>
     </a>
-      <a href="https://www.youtube.com/watch?v=fqaMYYzmyuk" target="_blank" class="CapsulaNotix4Video">
+      <a href="https://www.youtube.com/watch?v=fqaMYYzmyuk" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil">
         <div>
         <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video10.avif" alt="">
         <div class="botoPlay"><div></div></div>
@@ -1339,7 +1346,7 @@
         </div>
         </div>
       </a>
-        <a href="https://www.youtube.com/watch?v=SaUOE_Jlewc" target="_blank" class="CapsulaNotix4Video">
+        <a href="https://www.youtube.com/watch?v=SaUOE_Jlewc" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil">
           <div>
           <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video8.avif" alt="">
           <div class="botoPlay"><div></div></div>
@@ -1364,7 +1371,7 @@
     </div>
     </div>
   </a>
-    <a href="https://www.youtube.com/watch?v=c1qQwcsO45I" target="_blank" class="CapsulaNotix4Video">
+    <a href="https://www.youtube.com/watch?v=c1qQwcsO45I" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil2">
       <div>
       <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video7.avif" alt="">
       <div class="botoPlay"><div></div></div>
@@ -1375,7 +1382,7 @@
       </div>
       </div>
     </a>
-      <a href="https://www.youtube.com/watch?v=6eIBXMB6Wjs" target="_blank" class="CapsulaNotix4Video">
+      <a href="https://www.youtube.com/watch?v=6eIBXMB6Wjs" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil">
         <div>
         <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video9.avif" alt="">
         <div class="botoPlay"><div></div></div>
@@ -1386,7 +1393,7 @@
         </div>
         </div>
       </a>
-        <a href="https://www.youtube.com/watch?v=WvS11Y1km9o" target="_blank" class="CapsulaNotix4Video">
+        <a href="https://www.youtube.com/watch?v=WvS11Y1km9o" target="_blank" class="CapsulaNotix4Video CapsulaNotix4Mobil">
           <div>
           <div class="CapsulaNotiIMGx4 CapsulaNotiIMGx4Video"><img src="media/jocs/video11.avif" alt="">
           <div class="botoPlay"><div></div></div>
@@ -1440,38 +1447,41 @@
 <div class="carouselSlidex4 carouselSlideSelectedx4">
 <div class="CapsulaNotix4">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/obliv.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1249040/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Guía The Elder Scrolls IV: Oblivion Remastered</p>
-  <p class="bold white CapsulaNotiAccentx4">Esto es todo lo que necesitas saber para completar al 100% The Elder Scrolls IV: Oblivion Remastered. Regresa a Cyrodill y dessentraña los misterios de la conspiración que pretende acabar con el mundo.</p>
+  <p class="pLite white3">Reportaje American Arcadia</p>
+  <p class="bold white CapsulaNotiAccentx4">Un juego que mezcla plataformas y puzles con una crítica social a los realities.
+Inspirado en los años 60, es una experiencia visualmente única y provocadora.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/shadow.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2701660/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 1 mes</p>
-  <p class="pLite white3">Guía Assassin's Creed Shadows</p>
-  <p class="bold white CapsulaNotiAccentx4">¡Explora el Japón feudal, supera los objetivos principales de Assassin's Creed Shadows y encuentra el 100% de coleccionables con nuestra guía en español!</p>
+  <p class="pLite white3">Reportaje Dragon Quest</p>
+  <p class="bold white CapsulaNotiAccentx4">Los dos primeros juegos renacen con estética HD-2D y doblaje por primera vez.
+Una carta de amor al JRPG clásico con mejoras justas y fieles.</p>
 </div>
 </div>
 </div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/exp33.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/490110/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 2 dias</p>
-  <p class="pLite white3">Guía Expedition 33</p>
-  <p class="bold white CapsulaNotiAccentx4">¡Completa la apasionante historia de Clair Obscur: Expedition 33, derrota a los jefes y consigue todos los coleccionables de este RPG con nuestra guía en español!</p>
+  <p class="pLite white3">Reportaje Precinct</p>
+  <p class="bold white CapsulaNotiAccentx4">Olvídate del caos criminal: aquí juegas como un agente de policía real.
+Combina acción, investigación y rutina en una ciudad viva y cambiante.</p>
 </div>
 </div>
 </div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/inzoi.png" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="media/jocs/the-duskbloods.webp" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 3 semanas</p>
-  <p class="pLite white3">Trucos InZoi</p>
-  <p class="bold white CapsulaNotiAccentx4">Estos son todos los trucos disponibles para inZOI, el simulador de vida real de KRAFTON. Dinero infinito, colocar objetos en cualquier lugar y mucho más para hacer tu experiencia más llevadera.</p>
+  <p class="pLite white3">Reportaje The Duskbloods</p>
+  <p class="bold white CapsulaNotiAccentx4">Exclusivo para Nintendo Switch 2, este juego combina acción, rol y PvP en un mundo oscuro. Los jugadores asumen el rol de "Bloodsworn" en intensas batallas por la supervivencia. Una propuesta fresca que expande el universo Soulsborne.</p>
 </div>
 </div>
 </div>
@@ -1480,20 +1490,20 @@
 <div class="carouselSlidex4">
 <div class="CapsulaNotix4">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/starfield.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2634890/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 6 horas</p>
-  <p class="pLite white3">Trucos Starfield</p>
-  <p class="bold white CapsulaNotiAccentx4">Estos son todos los trucos y códigos de la consola en Starfield para hacerte más fácil tu vida espacial. Introduce cualquier comando para obtener sus efectos.</p>
+  <p class="pLite white3">Reportaje Marvel 1943</p>
+  <p class="bold white CapsulaNotiAccentx4">Skydance New Media presenta una narrativa original con dos héroes icónicos. Ambientado en París ocupado, enfrentan a la organización Hydra en una historia épica. Una propuesta fresca para los fans del universo Marvel.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/witcher3.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1807950/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 1 mes</p>
-  <p class="pLite white3">Trucos The Witcher 3</p>
-  <p class="bold white CapsulaNotiAccentx4">Los comandos de consola pueden hacer de tu partida algo completamente diferente. Te contamos todo sobre os trucos de The Witcher 3, qué hace cada comando y cómo</p>
+  <p class="pLite white3">Reportaje Time Flipper</p>
+  <p class="bold white CapsulaNotiAccentx4">Un metroidvania donde viajas entre líneas de tiempo para resolver puzles y salvar a prisioneros. Su mecánica única permite alterar el pasado y el presente con un solo botón.</p>
 </div>
 </div>
 </div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
@@ -1501,17 +1511,17 @@
 <div class="CapsulaNotiIMGx4"><img src="media/jocs/carru1.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 2 meses</p>
-  <p class="pLite white3">Guía Monster Hunter Wilds</p>
+  <p class="pLite white3">Reportaje</p>
   <p class="bold white CapsulaNotiAccentx4">Esto es todo lo que necesitas saber parar completar al 100% Monster Hunter Wilds. Consejos para todos los monstruos, cómo conseguir todos los materiales, consejos para usar cada una de las armas...</p>
 </div>
 </div>
 </div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/hades2.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2686400/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 2 semanas</p>
-  <p class="pLite white3">Guía Hades 2</p>
-  <p class="bold white CapsulaNotiAccentx4">¡Supera Hades 2 al 100% con nuestra guía que incluye todas las bendiciones, recuerdos, recursos, armas y consejos útiles contra jefes para cumplir la venganza de Melínoe!</p>
+  <p class="pLite white3">Reportaje Dipets</p>
+  <p class="bold white CapsulaNotiAccentx4">Criaturas digitales con personalidad propia que debes cuidar, entrenar y llevar al combate. Explora un mundo desolado y reconstruye una ciudad perdida mientras descubres los secretos de tus compañeros.</p>
 </div>
 </div>
 </div>
@@ -1520,38 +1530,38 @@
 <div class="carouselSlidex4">
 <div class="CapsulaNotix4">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/demonsouls.webp" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/1984020/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 1 mes</p>
-  <p class="pLite white3">Guía Demon's Souls</p>
-  <p class="bold white CapsulaNotiAccentx4">Bienvenidos a nuestra guía completa de Demon's Souls. Descubre todo sobre armas, hechizos, jefes y rutas para sobrevivir a la experiencia en Boletaria.</p>
+  <p class="pLite white3">Reportaje Everhood 2</p>
+  <p class="bold white CapsulaNotiAccentx4">Secuela de un juego rítmico que combina batallas musicales con exploración psicodélica. Más de 100 canciones originales y un editor de combate para personalizar tu experiencia.</p>
 </div>
 </div>
-</div><div class="CapsulaNotix4">
+</div><div class="CapsulaNotix4 CapsulaNotix4Mobil2">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/sims4.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2052300/header_japanese.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 3 meses</p>
-  <p class="pLite white3">Trucos Sims 4</p>
-  <p class="bold white CapsulaNotiAccentx4">Aquí encontrarás todos trucos para los Sims 4 bien explicados y detallados, trucos de dinero, de construcción, de necesidades...</p>
+  <p class="pLite white3">Reportaje Glaciered</p>
+  <p class="bold white CapsulaNotiAccentx4">Ambientado 65 millones de años en el futuro, controlas a una especie acuática inteligente en un mundo helado. Combate en tiempo real bajo el agua con habilidades de calor y frío.</p>
 </div>
 </div>
 </div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/kingdomcome.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/3164500/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 2 meses</p>
-  <p class="pLite white3">Guía Kingdom Come: Deliverance 2</p>
-  <p class="bold white CapsulaNotiAccentx4">Sumérgete en la cruda y épica aventura medieval de Kingdom Come: Deliverance 2 de la mano de nuestra guía en español llena de consejos de supervivencia y mucho más.</p>
+  <p class="pLite white3">Reportaje Schedule 1</p>
+  <p class="bold white CapsulaNotiAccentx4">Simulador de crimen y gestión empresarial donde te conviertes en un narcotraficante en un mundo abierto. Con una sátira oscura, alcanzó más de 400.000 jugadores simultáneos en su lanzamiento.</p>
 </div>
 </div>
 </div><div class="CapsulaNotix4 CapsulaNotix4Mobil">
 <div>
-<div class="CapsulaNotiIMGx4"><img src="media/jocs/zelda.jpg" alt=""></div>
+<div class="CapsulaNotiIMGx4"><img src="https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/2198150/header.jpg" alt=""></div>
 <div class="CapsulaNotiTEXT">
   <p class="pLite accent" style="text-align: right;">hace 4 meses</p>
-  <p class="pLite white3">Guía The Legend of Zelda: Echoes of Wisdom</p>
-  <p class="bold white CapsulaNotiAccentx4">Ayuda a la princesa Zelda a rescatar a Link y salva el reino en Echoes of Wisdom con nuestra guía paso a paso para completar el juego al 100% y conseguir todos los secretos.</p>
+  <p class="pLite white3">Tiny Glade</p>
+  <p class="bold white CapsulaNotiAccentx4">Juego de construcción relajante sin objetivos ni enemigos. Construye castillos, ruinas y cabañas en un entorno medieval mientras disfrutas de una experiencia tranquila y acogedora.</p>
 </div>
 </div>
 </div>
@@ -1581,7 +1591,7 @@
 <!-- Inici Peuet -->
  <footer>
     
-  <div class="banda">
+  <div class="banda" href="QuienesSomos.html">
       <div>
       <p class="white">Lo último en videojuegos de la mano de Vandal </p>
       <img class="svgXS" src="media/icon/DotAccent.svg" alt="">
@@ -1625,17 +1635,17 @@
           </div></div>
           <div class="FootCol3">
               <div class="XXSSFooter">
-                  <div><div class="XHover"></div></div>
-                  <div><div class="InstagramHover"></div></div>
-                  <div><div class="YoutubeHover"></div></div>
-                  <div><div class="FacebookHover"></div></div>
-                  <div><div class="TikTokHover"></div></div>
+                  <a href="https://x.com/VandalOnline?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="_blank"><div class="XHover"></div></a>
+                  <a href="https://www.instagram.com/vandalnet/?hl=es "><div class="InstagramHover"></div></a>
+                  <a href="https://www.youtube.com/vandal"><div class="YoutubeHover"></div></a>
+                  <a href="https://www.facebook.com/vandalonline/?locale=es_ES"><div class="FacebookHover"></div></a>
+                  <a href="https://www.tiktok.com/@vandalonline?lang=es"><div class="TikTokHover"></div></a>
               </div>
               <a class="textbotoFooter" href="QuienesSomos.html">¿Quiénes somos?</a>
               <a class="textbotoFooter" href="#">Aviso Legal</a>
               <a class="textbotoFooter" href="#">Politíca de cookies</a>
               <a class="textbotoFooter" href="#">Publicidad / Advertising</a>
-              <a class="textbotoFooter" href="#">Contacta</a>
+              <a class="textbotoFooter" href="QuienesSomos.html#Contacta">Contacta</a>
               <a href="Portada.html" target="_blank" class="LogoFooter">
                   <div><img src="media/vandal/IMAGOTIP.svg" alt="VANDAL"></div>
               </a>
