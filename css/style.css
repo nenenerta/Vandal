@@ -877,6 +877,116 @@ margin-top: 32px;
 }
 
 
+/* OJOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+/* CORRECCIÓN ESPECÍFICA PARA SVG EN DISPOSITIVOS APPLE */
+.plataformes img {
+    /* Dimensiones fijas para evitar problemas de escalado */
+    width: 16px !important;
+    height: 16px !important;
+    
+    /* Propiedades específicas para Safari/WebKit */
+    max-width: 16px;
+    max-height: 16px;
+    min-width: 16px;
+    min-height: 16px;
+    
+    /* Mejorar renderizado en dispositivos Apple */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    
+    /* Forzar re-renderizado correcto */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
+    /* Prevenir blur en pantallas retina */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    
+    /* Centrado perfecto */
+    display: block;
+    margin: 0 auto;
+    
+    /* Prevenir deformaciones */
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Corrección específica para el corazón */
+.seguirHeart {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 8;
+    /* Dimensiones fijas */
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seguirHeart img {
+    width: 20px !important;
+    height: 20px !important;
+    max-width: 20px;
+    max-height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+    
+    /* Mismas correcciones para Safari */
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    object-fit: contain;
+    object-position: center;
+}
+
+/* Mejoras adicionales para contenedores de juegos */
+.capsaJocLittle {
+    position: relative;
+    /* Asegurar que el contenedor tenga contexto de apilamiento */
+    isolation: isolate;
+}
+
+.capsaJoc:hover > p {
+    opacity: 1;
+}
+
+.capsaJoc:hover .blackHover {
+    opacity: 1;
+}
+
+.verJuegoResponsive {
+    display: none;
+}
+
+/* CORRECCIONES ADICIONALES ESPECÍFICAS PARA iOS/Safari */
+@supports (-webkit-touch-callout: none) {
+    /* Estos estilos solo se aplicarán en Safari/iOS */
+    
+    .plataformes img {
+        /* Forzar GPU rendering en iOS */
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        will-change: transform;
+    }
+    
+    .seguirHeart img {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        will-change: transform;
+    }
+    
+    /* Prevenir zoom en iOS al tocar */
+    .plataformes > div {
+        touch-action: manipulation;
+    }
+}
+/* OJOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO */
+
 .ForoLateral{
     margin-bottom: 60px;
     width: 100%;
