@@ -94,6 +94,25 @@ a{
   opacity: 0;
 }
 @media screen and (max-width: 991px) {
+  .O0{
+  opacity: 1;
+}
+}
+@media screen and (max-width: 1300px) {
+
+  section {
+      margin: 0px 80px 100px 80px;
+  }
+}
+
+@media screen and (max-width: 1170px) {
+
+  section {
+      margin: 0px 32px 100px 32px;
+  }
+}
+
+@media screen and (max-width: 991px) {
   section{
     margin: 0px 32px 60px 32px;
   }
@@ -103,6 +122,7 @@ a{
     margin: 0px 16px 60px 16px;
   }
 }
+
 /* TXT STANDAR-----------------------*/
 
 h1{
