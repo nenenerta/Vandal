@@ -31,7 +31,6 @@ function changeLogIn() {
   
   
 // Carrusel Portada
-
 const slides = document.getElementsByClassName("carouselSlide");
 const next = document.getElementsByClassName("next")[0];
 const prev = document.getElementsByClassName("prev")[0];
@@ -40,6 +39,8 @@ const indicators = document.querySelectorAll(".carouselIndicators img");
 let currentIndex = 0;
 let touchStartX = 0;
 let touchEndX = 0;
+let isAutoplayActive = true;
+let autoplayInterval;
 
 // Funció: Canviar al següent slide
 function NextCarrHome() {
@@ -70,53 +71,136 @@ function updateSlide() {
 
 // Funció: Actualitza els indicadors visuals (punts)
 function updateIndicators() {
-  for (let i = 0; i < indicators.length; i++) {
-    indicators[i].src = (i === currentIndex)
-      ? "media/icon/DotAccent.svg"
-      : "media/icon/DotWhite.svg";
+  if (indicators.length > 0) {
+    for (let i = 0; i < indicators.length; i++) {
+      indicators[i].src = (i === currentIndex)
+        ? "media/icon/DotAccent.svg"
+        : "media/icon/DotWhite.svg";
+    }
   }
 }
 
 // Funció: autoplay (reproducció automàtica)
-function autoPlayCarousel() {
-  setInterval(() => {
-    NextCarrHome();
+function startAutoplay() {
+  if (autoplayInterval) clearInterval(autoplayInterval);
+  
+  autoplayInterval = setInterval(() => {
+    if (isAutoplayActive) {
+      NextCarrHome();
+    }
   }, 8000);
 }
 
-// 👇 Afegim suport tàctil si ample <= 991px
+// Pausa temporalment l'autoplay quan l'usuari interactua
+function pauseAutoplay() {
+  isAutoplayActive = false;
+  setTimeout(() => {
+    isAutoplayActive = true;
+  }, 10000); // Resum després de 10 segons
+}
+
+// Suport tàctil millorat
 function enableTouchSwipe() {
-  const carouselContainer = document.querySelector(".carouselContainer"); // ajusta si tens un altre contenidor
-
-  if (!carouselContainer) return;
-
+  // Prova diferents selectors possibles
+  const carouselContainer = document.querySelector(".carouselContainer") 
+    || document.querySelector(".carousel") 
+    || document.querySelector("[class*='carousel']")
+    || document.body; // Fallback al body si no troba el contenidor
+  
+  if (!carouselContainer) {
+    console.warn("No s'ha trobat el contenidor del carrusel");
+    return;
+  }
+  
+  console.log("Touch habilicat per:", carouselContainer);
+  
+  // Prevenir el scroll horitzontal durant el swipe
   carouselContainer.addEventListener("touchstart", (e) => {
-    touchStartX = e.changedTouches[0].screenX;
-  });
-
+    touchStartX = e.changedTouches[0].clientX;
+    pauseAutoplay();
+  }, { passive: true });
+  
+  carouselContainer.addEventListener("touchmove", (e) => {
+    // Opcional: prevenir scroll si es detecta moviment horitzontal
+    const touchCurrentX = e.changedTouches[0].clientX;
+    const diffX = Math.abs(touchCurrentX - touchStartX);
+    const diffY = Math.abs(e.changedTouches[0].clientY - e.changedTouches[0].clientY);
+    
+    if (diffX > diffY && diffX > 10) {
+      e.preventDefault(); // Prevenir scroll vertical
+    }
+  }, { passive: false });
+  
   carouselContainer.addEventListener("touchend", (e) => {
-    touchEndX = e.changedTouches[0].screenX;
+    touchEndX = e.changedTouches[0].clientX;
     handleSwipe();
-  });
+  }, { passive: true });
 }
 
 function handleSwipe() {
-  const minSwipeDistance = 50;
-  if (touchEndX < touchStartX - minSwipeDistance) {
-    NextCarrHome(); // Swipe esquerra → següent
-  } else if (touchEndX > touchStartX + minSwipeDistance) {
-    PrevCarrHome(); // Swipe dreta → anterior
+  const minSwipeDistance = 30; // Reduït per fer-ho més sensible
+  const swipeDistance = touchEndX - touchStartX;
+  
+  console.log("Swipe detectat:", swipeDistance);
+  
+  if (Math.abs(swipeDistance) >= minSwipeDistance) {
+    if (swipeDistance < 0) {
+      NextCarrHome(); // Swipe esquerra → següent
+      console.log("Swipe esquerra - Següent");
+    } else {
+      PrevCarrHome(); // Swipe dreta → anterior  
+      console.log("Swipe dreta - Anterior");
+    }
   }
 }
 
-window.addEventListener("load", () => {
-  autoPlayCarousel();
+// Event listeners per botons
+if (next) {
+  next.addEventListener("click", () => {
+    NextCarrHome();
+    pauseAutoplay();
+  });
+}
 
-  if (window.innerWidth <= 991) {
-    enableTouchSwipe();
+if (prev) {
+  prev.addEventListener("click", () => {
+    PrevCarrHome();
+    pauseAutoplay();
+  });
+}
+
+// Inicialització
+function initCarousel() {
+  if (slides.length === 0) {
+    console.warn("No s'han trobat slides del carrusel");
+    return;
+  }
+  
+  updateSlide(); // Inicialitza el primer slide
+  startAutoplay();
+  
+  // Habilita touch sempre, no només en mòbil
+  enableTouchSwipe();
+  
+  // També pots habilitar només en mòbil si prefereixes:
+  // if (window.innerWidth <= 991) {
+  //   enableTouchSwipe();
+  // }
+}
+
+// Inicialitza quan el DOM estigui carregat
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initCarousel);
+} else {
+  initCarousel();
+}
+
+// També escolta l'event load per si de cas
+window.addEventListener("load", () => {
+  if (slides.length > 0 && !autoplayInterval) {
+    initCarousel();
   }
 });
-
 
 
 
@@ -128,6 +212,8 @@ document.querySelectorAll(".carouselx4").forEach(carousel => {
   const indicatorsx4 = carousel.querySelectorAll(".carouselIndicatorsx4 img");
 
   let currentIndexx4 = 0;
+  let touchStartX = 0;
+  let touchEndX = 0;
 
   function updateIndicators() {
     for (let i = 0; i < indicatorsx4.length; i++) {
@@ -163,55 +249,69 @@ document.querySelectorAll(".carouselx4").forEach(carousel => {
     updateSlide();
   }
 
-  nextx4.addEventListener("click", NextCarrx4);
-  prevx4.addEventListener("click", PrevCarrx4);
+  // Gestió del swipe tàctil
+  function handleSwipe() {
+    const minSwipeDistance = 30;
+    const swipeDistance = touchEndX - touchStartX;
+    
+    if (Math.abs(swipeDistance) >= minSwipeDistance) {
+      if (swipeDistance < 0) {
+        NextCarrx4(); // Swipe esquerra → següent
+      } else {
+        PrevCarrx4(); // Swipe dreta → anterior
+      }
+    }
+  }
 
+  // Suport tàctil
+  function enableTouchSwipe() {
+    carousel.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].clientX;
+    }, { passive: true });
+
+    carousel.addEventListener("touchmove", (e) => {
+      const touchCurrentX = e.changedTouches[0].clientX;
+      const touchCurrentY = e.changedTouches[0].clientY;
+      const touchStartY = e.changedTouches[0].clientY;
+      
+      const diffX = Math.abs(touchCurrentX - touchStartX);
+      const diffY = Math.abs(touchCurrentY - touchStartY);
+      
+      // Prevenir scroll si el moviment és majoritàriament horitzontal
+      if (diffX > diffY && diffX > 10) {
+        e.preventDefault();
+      }
+    }, { passive: false });
+
+    carousel.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].clientX;
+      handleSwipe();
+    }, { passive: true });
+  }
+
+  // Event listeners per botons
+  if (nextx4) {
+    nextx4.addEventListener("click", NextCarrx4);
+  }
+
+  if (prevx4) {
+    prevx4.addEventListener("click", PrevCarrx4);
+  }
+
+  // Event listeners per indicadors
   indicatorsx4.forEach((indicator, index) => {
     indicator.addEventListener("click", () => {
       currentIndexx4 = index;
       updateSlide();
     });
   });
+
+  // Inicialitzar el carrusel
+  if (slidesx4.length > 0) {
+    updateSlide();
+    enableTouchSwipe();
+  }
 });
-
-
-
-
-// // Variables per detectar el swipe
-// let touchStartX = 0;
-// let touchEndX = 0;
-
-// // Element on volem detectar el swipe
-// const carouselTrack = document.getElementById("carouselTrack");
-
-// // Quan comença el toc
-// carouselTrack.addEventListener("touchstart", (e) => {
-//   touchStartX = e.changedTouches[0].screenX;
-// });
-
-// // Quan acaba el toc
-// carouselTrack.addEventListener("touchend", (e) => {
-//   touchEndX = e.changedTouches[0].screenX;
-//   handleSwipeGesture();
-// });
-
-// // Funció per detectar el gest
-// function handleSwipeGesture() {
-//   const swipeThreshold = 50; // píxels mínims per considerar swipe
-
-//   if (touchEndX < touchStartX - swipeThreshold) {
-//     // Swipe cap a l'esquerra → següent
-//     NextCarrHome();
-//   }
-//   if (touchEndX > touchStartX + swipeThreshold) {
-//     // Swipe cap a la dreta → anterior
-//     PrevCarrHome();
-//   }
-// }
-
-
-
-
 
 
 function banda() {
@@ -395,7 +495,6 @@ function OpenJocs() {
   juegosMenu.classList.toggle('visible');
   articulosMenu.classList.remove('visible');
 }
-
 
 
 
