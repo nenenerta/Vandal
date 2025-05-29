@@ -233,6 +233,7 @@
 .VandalMenu:hover .menuVANDAL{
    display: block;
 }
+
 .VandalMenu:hover >button>img{
     transform: rotateZ(135deg);
 }
